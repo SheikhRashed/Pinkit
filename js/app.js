@@ -1,3 +1,10 @@
+
+function myFunction(x) {
+  const logo = document.getElementsByClassName('brand');
+  x.classList.toggle("change");
+}
+
+
 // Slick Slider
 
 $(document)

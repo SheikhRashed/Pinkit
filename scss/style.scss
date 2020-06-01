@@ -36,6 +36,78 @@ body{
 
 #banner{
     
+    .banner_bg{
+        background: url(../images/banner.png)  no-repeat;
+        background-size: 100% 97%;
+        height: calc(100vh - 100px);
+        padding: 30px 0px;
+        position: relative;
+
+    .brand{
+        .brand-txt{
+            position: absolute;
+            left: 300px;
+            top: 26px;
+            font-size: 36px;
+            line-height: 20px;
+            color: #fff;
+        }
+        .brand-log{
+            position: absolute;
+            top: 0px;
+            left: 50px;
+        }
+    }
+    .toggler_icon{
+        position: absolute;
+        right: 80px;
+        top: 100px;
+        z-index: 333;
+        &.change{
+            .span_1{
+                transform: rotate(-45deg) translate(-9px, 6px);
+            }
+            .span_2{
+                opacity: 0;
+            }
+            .span_3{
+                transform: rotate(45deg) translate(-8px, -8px);
+            }
+        }
+        .span{
+            height: 4px;
+            width: 30px;
+            background: #479ed7;
+            margin: 6px 0px;
+            transition: all 0.3s linear;
+        }
+        
+    }
+    .bnnr_content{
+        padding: 60px 0px;
+        .background_grdient{
+            h1 {
+                font-size: 46px;
+            }
+        }
+        .book_stra{
+            background: url(../images/book-stra.png) no-repeat;
+            padding: 0px 15px;
+            background-size: 100% 100%;
+            display: inline-block;
+            span   {
+                font-size: 22px;
+                padding: 0px 35px;
+                color: #091035;
+                line-height: 40px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    }
+
+
 }
 
 /* End  Banner section  */
