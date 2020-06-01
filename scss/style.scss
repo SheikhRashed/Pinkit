@@ -145,6 +145,11 @@ body{
                         font-size: 24px;
                         padding-top: 25px;
                     }
+
+                    @include mobile_sm{
+                        font-size: 11px;
+                        padding-top: 32px;
+                    }
                 }
 
                 .tab_content{
@@ -156,11 +161,18 @@ body{
                     @include tablet_min_max{
                         padding: 60px;
                     }
+
+                    @include mobile_sm{
+                        padding: 16px;
+                    }
                     .tab-item{
                         padding-bottom: 120px;
 
                         @include tablet_min_max{
                             padding-bottom: 50px;
+                        } 
+                        @include mobile_sm{
+                            padding-bottom: 80px;
                         }
                         &.slick-slide{
                             outline: none;
@@ -186,6 +198,11 @@ body{
                                 padding-left: 24px;
                                 padding-bottom: 16px;
                             }
+                            @include mobile_sm{
+                                font-size: 18px;
+                                padding-bottom: 0px;
+                                line-height: 28px;
+                            }
                             &,p{
                                 text-align: center;
                                 color: #fff;
@@ -207,6 +224,10 @@ body{
                                 font-size: 14px;
                                 line-height: 24px;
                                 padding: 0px 22px;
+                            }
+                            @include mobile_sm{
+                                font-size: 14px;
+                                line-height: 18px;
                             }
                         }
                     }
@@ -244,6 +265,12 @@ body{
                         font-size: 16px;
                         line-height: 30px;
                        }
+                       @include mobile_sm{
+                           font-size: 8px;
+                           font-weight: bold;
+                           bottom: 55px;
+                           left: 25px;
+                       }
                        &.slick-next{
                            margin-left: 215px;
                            @include medium_mx{
@@ -257,6 +284,9 @@ body{
                            }
                            @include tablet_min_max{
                                margin-left: 125px;
+                           }
+                           @include mobile_sm{
+                               margin-left: 60px;
                            }
                        }
                     }
@@ -299,6 +329,15 @@ body{
                                 width: 245px;
                                 text-align: center;
                                 font-size: 14px;
+                            }
+                            @include mobile_sm{
+                                width: 95px !important;
+                                margin-right: 8px;
+                                margin-bottom: 6px;
+                                width: 245px;
+                                text-align: center;
+                                font-size: 5px;
+                                line-height: 5px;
                             }
                         }
                     }
@@ -386,6 +425,9 @@ body{
                        font-size: 28px;
                        line-height: 24px;
                    }
+                   @include mobile_sm{
+                       font-size: 18px;
+                   }
                }
                p{
                     
@@ -399,6 +441,10 @@ body{
                        @include tablet{
                            font-size: 18px;
                        }
+                       @include mobile_sm{
+                        font-size: 12px;
+                        line-height: 23px;
+                       }
                   }
                   &.second{
                      padding: 30px 0px;
@@ -408,6 +454,10 @@ body{
                      }
                      @include tablet{
                          margin-left: 85px;
+                     }
+                     @include mobile_sm{
+                        margin-left: 92px;
+                        font-size: 10px;
                      }
                   }
                }
@@ -438,6 +488,10 @@ body{
                 @include tablet_min_max{
                     margin-right: 172px;
                 }
+                @include mobile_sm{
+                    font-size: 13px;
+                    padding: 6px 30px;
+                }
             }
            }
         }
@@ -465,6 +519,9 @@ body{
         @include tablet_min_max {
             margin-left: 135px;
         }
+        @include mobile_sm{
+            margin-left: 75px;
+        }
         .more{
             font-size: 14px !important;
             padding: 15px 10px !important;
@@ -486,6 +543,12 @@ body{
                 font-size: 10px !important;
                 padding: 12px 11px !important;
                 margin-right: 32px !important;
+            }
+            @include mobile_sm{
+                margin-right: 24px !important;
+                margin: 0;
+                font-size: 4px !important;
+                padding: 10px 12px !important;
             }
         }
     }
@@ -514,6 +577,9 @@ body{
                         font-size: 40px;
                         line-height: 42px;
                     }
+                    @include mobile_sm{
+                        font-size: 26px;
+                    }
                     &::after{
                         content: '';
                         position: absolute;
@@ -538,6 +604,12 @@ body{
                         @include laptop_min_max {
                             top: -150px;
                             right: -35px;
+                        }
+                        @include mobile_sm{
+                            height: 2px;
+                            top: 78px;
+                            right: -58px;
+                            width: 278px;
                         }
                     }
                 }
@@ -654,6 +726,9 @@ body{
                @include small_mx{
                    right: 165px;
                }
+               @include mobile_sm{
+                   right: 70px;
+               }
                li{
                    display: inline-block;
                    margin: 0px 8px;
@@ -694,6 +769,9 @@ body{
                     height: 350px;
                     object-fit: contain;
                 }
+                @include mobile_sm{
+                    background: none;
+                }
                 .marker{
                     background: url(../images/marker.png) no-repeat;
                     background-size: contain;
@@ -716,20 +794,42 @@ body{
                         transform: translate(-20%,-50%) !important;
                     }
 
+                    @include mobile_sm {
+                        transform: translate(7%, -50%) !important;
+                        width: 325px;
+                        height: 200px;
+                    }
+
                 .title{
                     font-size: 24px;
                     padding-bottom: 28px;
                     line-height: 40px;
+
+                    @include mobile_sm{
+                        padding-bottom: 8px;
+                        line-height: 23px;
+                        font-size: 15px;
+                    }
                 }
                 .counter{
                     width: 50%;
                     max-width: 50%;
                     float: left;
                     text-align: center;
+                    @include mobile_sm{
+                        max-width: 50%;
+                        float: left;
+                        width: 45%;
+                        text-align: left;
+                    }
                     p{
                         margin: 0px;
                         &:first-child{
                             font-size: 18px;
+
+                            @include mobile_sm{
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
@@ -756,9 +856,16 @@ body{
                     margin-bottom: 18px;
                     padding-top: 55px;
                 }
+                @include mobile_sm{
+                    padding-bottom: 16px;
+                    margin-bottom: 12px;
+                    padding-top: 34px;
+                }
                 .apply{
                     font-size: 22px;
-
+                    @include mobile_sm{
+                        font-size: 14px;
+                    }
                     @include tablet{
                         font-size: 18px;
                     }
@@ -774,12 +881,21 @@ body{
                         line-height: 38px;
                         padding-bottom: 24px;
                     }
+                    @include mobile_sm{
+                        font-size: 26px;
+                        line-height: 28px;
+                        padding-bottom: 3px;
+                    }
                 }
 
                 a{
                    font-size: 18px; 
                    font-family: "myrid";
                    color: #fff;
+
+                   @include mobile_sm{
+                    font-size: 12px;
+                   }
                 }
             }
         }
