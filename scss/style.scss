@@ -158,6 +158,10 @@ body{
                             font-size: 18px;
                             line-height: 32px;
                         }
+                        @include mobile_sm{
+                            font-size: 18px;
+
+                        }
                     }
                 }
            }
@@ -232,7 +236,7 @@ body{
                     }
 
                     @include mobile_sm{
-                        font-size: 11px;
+                        font-size: 10px;
                         padding-top: 32px;
                     }
                 }
@@ -404,6 +408,7 @@ body{
                         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.377);
                         transition: all 0.5s;
                         z-index: 999;
+                        font-size: 18px;
                         cursor: pointer;
                         &:hover{
                             transform: translateY(-10px);
@@ -599,7 +604,8 @@ body{
                 }
                 @include mobile_sm{
                     font-size: 13px;
-                    padding: 6px 30px;
+                    padding: 6px 12px;
+                    margin-right: -25px;
                 }
             }
            }
@@ -632,7 +638,7 @@ body{
             margin-left: 135px;
         }
         @include mobile_sm{
-            margin-left: 75px;
+            margin-left: 90px;
         }
         .button{
             font-size: 14px !important;
