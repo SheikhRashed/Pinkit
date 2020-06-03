@@ -223,10 +223,47 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 767px) {
+  #banner .banner_bg .brand .brand-txt {
+    left: 110px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #banner .banner_bg .brand .brand-txt {
+    left: 150px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 575px) {
+  #banner .banner_bg .brand .brand-txt {
+    left: 14px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #banner .banner_bg .brand .brand-txt {
+    left: 60px;
+    font-size: 24px;
+  }
+}
+
 #banner .banner_bg .brand .brand-log {
   position: absolute;
   top: 5px;
   left: 50px;
+}
+
+@media (max-width: 767px) {
+  #banner .banner_bg .brand .brand-log {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #banner .banner_bg .brand .brand-log {
+    left: 22px;
+  }
 }
 
 #banner .banner_bg .toggler_icon {
@@ -267,6 +304,29 @@ body {
   font-size: 46px;
   line-height: 2.6rem;
   text-transform: uppercase;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  #banner .banner_bg .bnnr_content .background_grdient h1 {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 575px) {
+  #banner .banner_bg .bnnr_content .background_grdient h1 {
+    font-size: 24px;
+  }
+}
+
+#banner .banner_bg .bnnr_content .background_grdient h1:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+  width: calc(100% - 50%);
+  height: 2px;
+  background: #03a6ff;
 }
 
 #banner .banner_bg .bnnr_content .book_stra {
@@ -274,6 +334,7 @@ body {
   padding: 0px 15px;
   background-size: 100% 100%;
   display: inline-block;
+  margin-top: 10px;
   cursor: pointer;
 }
 
@@ -284,6 +345,12 @@ body {
   line-height: 40px;
   padding-bottom: 30px;
   text-transform: uppercase;
+}
+
+@media (min-width: 360px) and (max-width: 575px) {
+  #banner .banner_bg .bnnr_content .book_stra span {
+    font-size: 12px;
+  }
 }
 
 /* End  Banner section  */

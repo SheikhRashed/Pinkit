@@ -52,11 +52,31 @@ body{
             line-height: 2.6rem;
             color: #fff;
             text-transform: uppercase;
+
+            @include medium_mx{
+                left: 110px;
+            }
+            @include tablet_min_max{
+                left: 150px;
+            }
+            @include mobile_sm{
+                left: 14px !important;
+            }
+            @include small_mx{
+                left: 60px;
+                font-size: 24px;
+            }
         }
         .brand-log{
             position: absolute;
             top: 5px;
             left: 50px;
+            @include medium_mx{
+                display: none;
+            }
+            @include tablet_min_max{
+                left: 22px;
+            }
         }
     }
     .toggler_icon{
@@ -91,6 +111,31 @@ body{
                 font-size: 46px;
                 line-height: 2.6rem;
                 text-transform: uppercase;
+                position: relative;
+                @include medium_mx{
+                    font-size: 38px;
+                }
+                @include mobile_sm{
+                    font-size: 24px;
+                }
+                &:after{
+                    content:'';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 25%;
+                    width: calc(100% - 50%);
+                    height: 2px;
+                    background: #03a6ff;
+
+                    @include medium_mx{
+                        // width: 450px;
+                        // left: 19%;
+                    }
+                    @include tablet_min_max{
+                        // width: 550px;
+                        // left: 14%;
+                    }
+                }
             }
         }
         .book_stra{
@@ -98,7 +143,13 @@ body{
             padding: 0px 15px;
             background-size: 100% 100%;
             display: inline-block;
+            margin-top: 10px;
             cursor: pointer;
+
+            @include mobile_sm{
+                // width: calc(50%-100px);
+                // width: 150px;
+            }
             span   {
                 font-size: 22px;
                 padding: 0px 35px;
@@ -106,6 +157,9 @@ body{
                 line-height: 40px;
                 padding-bottom: 30px;
                 text-transform: uppercase;
+                @include mobile_sm{
+                    font-size: 12px;
+                }
             }
         }
     }

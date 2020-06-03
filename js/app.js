@@ -1,10 +1,5 @@
-
-function myFunction(x) {
-  const logo = document.getElementsByClassName('brand');
-  x.classList.toggle("change");
-}
-
-
+$(function(){
+  
 // Slick Slider
 
 $(document)
@@ -60,45 +55,36 @@ $(document).ready(function() {
 // Service slider
 $('.tab_content').slick();
 
+
 // client Slider
 $('.client_slider').slick({
-    dots: false,
-    arrows:false,
-    infinite: true,
-    autoplay:true,
-    draggable:true,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll:2,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-        }
-      },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1
-    //     }
-    //   }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-  });
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+  dots: false,
+  infinite: true,
+  responsive: [
 
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+
+  
 // Case Slider
 $('.case_slider').slick({
     dots: true,
@@ -138,3 +124,9 @@ $('.case_slider').slick({
     //   // instead of a settings object
     // ]
   });
+});
+function myFunction(x) {
+  const logo = document.getElementsByClassName('brand');
+  x.classList.toggle("change");
+}
+
