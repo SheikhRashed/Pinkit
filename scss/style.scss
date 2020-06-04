@@ -50,7 +50,7 @@ body{
         .brand-txt{
             position: absolute;
             left: 300px;
-            top: 26px;
+            top: 25px;
             font-size: 36px;
             line-height: 2.6rem;
             color: #fff;
@@ -91,6 +91,7 @@ body{
             z-index: 333;
             @include small_mx{
                 right: 48px;
+                top: 96px;
             }
             &.change{
                 .span_1{

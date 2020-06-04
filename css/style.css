@@ -220,7 +220,7 @@ body {
 #banner .banner_bg .brand .brand-txt {
   position: absolute;
   left: 300px;
-  top: 26px;
+  top: 25px;
   font-size: 36px;
   line-height: 2.6rem;
   color: #fff;
@@ -280,6 +280,7 @@ body {
 @media (max-width: 576px) {
   #banner .banner_bg nav .toggler_icon {
     right: 48px;
+    top: 96px;
   }
 }
 
