@@ -172,7 +172,7 @@ body {
 
 @font-face {
   font-family: "nasali";
-  src: url("../fonts/nasalization-rg.ttf");
+  src: url("../fonts/nasta.ttf");
 }
 
 @font-face {
@@ -1018,13 +1018,13 @@ body {
   font-size: 28px;
   line-height: auto;
   margin-top: 30px;
-  font-family: 'square';
+  font-family: "square";
+  text-transform: uppercase;
 }
 
 @media (max-width: 991px) {
   #slogan .container .section_inner .slogan_txt p {
     font-size: 24px;
-    font-family: "myrid";
   }
 }
 
