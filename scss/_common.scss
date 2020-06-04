@@ -37,10 +37,15 @@ $tablet: 767px;
 $laptop: 991px;
 $dektop: 1024px;
 
-
 @mixin  mobile_sm {
-    @media (min-width:360px) and (max-width: 575px) {
+    @media (min-width:320px) and (max-width: 575px) {
             @content;
+    }
+}
+
+@mixin large_mx {
+    @media (max-width: #{$dektop}) {
+        @content;
     }
 }
 @mixin medium_mx {

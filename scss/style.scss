@@ -40,9 +40,12 @@ body{
         background: url(../images/banner.png)  no-repeat;
         background-size: 100% 97%;
         height: calc(100vh - 100px);
-        padding: 30px 0px;
+        padding: 60px 0px;
+        // padding-top: 150px;
         position: relative;
-
+        &.pb{
+            padding-top: 160px;
+        }
     .brand{
         .brand-txt{
             position: absolute;
@@ -79,33 +82,127 @@ body{
             }
         }
     }
-    .toggler_icon{
-        position: absolute;
-        right: 80px;
-        top: 100px;
-        z-index: 333;
-        &.change{
-            .span_1{
-                transform: rotate(-45deg) translate(-9px, 6px);
+    nav{
+       
+        .toggler_icon{
+            position: absolute;
+            right: 80px;
+            top: 130px;
+            z-index: 333;
+            @include small_mx{
+                right: 48px;
             }
-            .span_2{
+            &.change{
+                .span_1{
+                    transform: rotate(-45deg) translate(-9px, 6px);
+                }
+                .span_2{
+                    opacity: 0;
+                }
+                .span_3{
+                    transform: rotate(45deg) translate(-8px, -8px);
+                }
+            }
+            .span{
+                height: 4px;
+                width: 30px;
+                background: #479ed7;
+                margin: 6px 0px;
+                transition: all 0.3s linear;
+            }
+            
+        }
+          .nav_links{
+                overflow: hidden;
+                background: #396b9c;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 8px 0px;
+                width: calc(100% - 50%);
+                position: absolute;
+                top: 130px;
+                left: 25%;
+                z-index: 333;
+                transform:  translateY(-200px);
+                transition: 0.5s;
                 opacity: 0;
+                border-radius: 5px;
+                @include large_mx{
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 15px 0px;
+                    background: #0974ad;
+                    border-radius: 5px;
+                }
+                &.fade{
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+                li{
+                    margin: 0px 15px;
+                    position: relative;
+                    transition: 0.4s;
+                    &:after{
+                        content:'';
+                        position: absolute;
+                        top: -7px;
+                        right: 0px;
+                        width: 0%;
+                        height: 2px;
+                        background: #479ed7;
+                        transition: 0.5s ease-in-out;
+                    }
+                    &:before{
+                        content:'';
+                        position: absolute;
+                        bottom: -7px;
+                        left: 0px;
+                        width: 0%;
+                        height: 2px;
+                        background: #479ed7;
+                        transition: 0.5s ease-in-out;
+                    }
+
+                    &:hover{
+                        transform: scale(1.1);
+                        @include large_mx{
+                            background: #03a6ff;
+                        }
+                        &:after{
+                           width: 100%;
+                        }
+                        &::before{
+                            width: 100%
+                        }
+                    }
+                    @include large_mx{
+                        margin: 8px 0px;
+                        padding: 0;
+                        width: 100%;
+                        text-align: center;
+                        position: relative;
+                        
+                    }
+                    a{
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        color: #fff;
+                        @include large_mx{
+                            color: #fff;
+                        }
+                    }
+                }
             }
-            .span_3{
-                transform: rotate(45deg) translate(-8px, -8px);
-            }
-        }
-        .span{
-            height: 4px;
-            width: 30px;
-            background: #479ed7;
-            margin: 6px 0px;
-            transition: all 0.3s linear;
-        }
-        
+          
     }
     .bnnr_content{
         padding: 60px 0px;
+
+        p{
+            img{
+                width: 275px;
+            }
+        }
         .background_grdient{
             h1 {
                 font-size: 46px;
@@ -116,7 +213,7 @@ body{
                     font-size: 38px;
                 }
                 @include mobile_sm{
-                    font-size: 24px;
+                    font-size: 18px;
                 }
                 &:after{
                     content:'';
@@ -137,6 +234,7 @@ body{
                     }
                 }
             }
+           
         }
         .book_stra{
             background: url(../images/book-stra.png) no-repeat;
@@ -165,7 +263,34 @@ body{
     }
 
     }
-
+    .start{
+        position: absolute;
+        right: 0px;
+        bottom: 20px;
+            @include medium_mx{
+                display: flex;
+                right: 112px;
+                bottom: 8px;
+            }
+            @include small_mx{
+                right: 80px;
+                bottom: 0px;
+            }
+            @include mobile_sm{
+                display: none;
+            }
+        .start_icon{
+            width: 60px;
+            height: 60px;
+            @include medium_mx{
+                width: 50px;
+            }
+            @include small_mx{
+                margin: 0px 8px;
+                width: 30px;
+            }
+        }
+    }
 
 }
 
@@ -187,12 +312,9 @@ body{
                         text-align: center !important;
                     }
                     h2{
-                        // font-size: 62px;
-                        // line-height: 64px;
-                        // version 1
+                      
                         font-size: 42px;
                         line-height: 46px;
-                        // version 2
 
                         text-transform: uppercase;
                         @include tablet_mx {
@@ -221,7 +343,6 @@ body{
            }
            .abt_vid_col{
                display: flex;
-            //    justify-content: flex-end;
                 flex-direction: column;
                 align-items: flex-end;
                 @include tablet_mx {
@@ -253,7 +374,6 @@ body{
 
 /* service section start */
 #service{
-    // padding: 90px 0px;
     padding-top: 30px;
     .tabs{
         padding-bottom: 70px;
@@ -640,11 +760,12 @@ body{
                 @extend %btn;
                 padding-left: 20px;
                 padding-right: 20px;
+                margin-left: 140px;
                 @include laptop_mx{
                     font-size: 14px;
                     padding: 6px 30px;
                     margin-top: 8px;
-                    margin-right: 190px;
+                    margin-left: 55px;
                 }
                 @include small_mx{
                     margin-right: 80px;
@@ -660,6 +781,9 @@ body{
                     font-size: 13px;
                     padding: 6px 12px;
                     margin-right: -25px;
+                }
+                @include medium_mx{
+                    margin-left: 95px;
                 }
             }
            }
@@ -678,12 +802,12 @@ body{
         }
     }
     .strategy_btn{
-        margin-left: 145px;
+        margin-left: 102px;
         @include medium_mx{
-            margin-left: 122px;
+            margin-left: 72px;
         }
         @include small_mx{
-            margin-left: 92px;
+            margin-left: 47px;
         }
         @include tablet {
             margin-left: 94px;
@@ -692,13 +816,13 @@ body{
             margin-left: 135px;
         }
         @include mobile_sm{
-            margin-left: 90px;
+            margin-left: 0px;
         }
         .button{
             font-size: 14px !important;
             padding: 15px 10px !important;
-            margin-right: 46px !important;
-
+            // margin-right: 46px !important;
+            margin-left: 46px !important;
             @include medium_mx{
                 font-size: 14px !important;
                 padding: 12px 22px !important;

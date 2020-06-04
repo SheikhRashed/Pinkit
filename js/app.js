@@ -1,5 +1,8 @@
 $(function(){
   
+  new WOW().init();
+
+
 // Slick Slider
 
 $(document)
@@ -48,8 +51,7 @@ $(document).ready(function() {
       licenseKey: '786EA650-72B5435C-8FA02511-4D1E8B65'
     
     });
-    //methods
-    //$.fn.fullpage.setAllowScrolling(false);
+    
     });
     
 // Service slider
@@ -68,7 +70,7 @@ $('.client_slider').slick({
   responsive: [
 
     {
-      breakpoint: 768,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2
@@ -95,38 +97,19 @@ $('.case_slider').slick({
     speed: 300,
     slidesToShow: 1,
     slidesToScroll:1,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //       infinite: true,
-    //       dots: true
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1
-    //     }
-    //   }
-    //   // You can unslick at a given breakpoint now by adding:
-    //   // settings: "unslick"
-    //   // instead of a settings object
-    // ]
   });
 });
-function myFunction(x) {
-  const logo = document.getElementsByClassName('brand');
-  x.classList.toggle("change");
-}
 
+
+// toggler
+const toggler = document.querySelector('.toggler_icon');
+const nav_links = document.querySelector('.nav_links');
+const nav_link = document.querySelectorAll('.nav_links li');
+const div = document.querySelector('.none');
+toggler.addEventListener('click',(x)=>{
+  nav_links.classList.toggle("fade");
+  nav_links.classList.toggle("pb");
+  toggler.classList.toggle("change");
+  console.log(`${open} is working.......`);
+  
+});
