@@ -105,8 +105,8 @@ body{
                 }
             }
             .span{
-                height: 4px;
-                width: 30px;
+                height: 6px;
+                width: 40px;
                 background: #479ed7;
                 margin: 6px 0px;
                 transition: all 0.3s linear;
@@ -198,18 +198,18 @@ body{
     }
     .bnnr_content{
         padding: 60px 0px;
-
         p{
             img{
-                width: 275px;
+                width: 390px;
             }
         }
         .background_grdient{
             h1 {
-                font-size: 46px;
-                line-height: 2.6rem;
+                font-size: 72px;
+                line-height: 80px;
                 text-transform: uppercase;
                 position: relative;
+
                 @include medium_mx{
                     font-size: 38px;
                 }
@@ -250,12 +250,13 @@ body{
                 // width: 150px;
             }
             span   {
-                font-size: 22px;
+                font-size: 32px;
                 padding: 0px 35px;
                 color: #091035;
                 line-height: 40px;
                 padding-bottom: 30px;
                 text-transform: uppercase;
+                font-family: "square";
                 @include mobile_sm{
                     font-size: 12px;
                 }
@@ -314,8 +315,8 @@ body{
                     }
                     h2{
                       
-                        font-size: 42px;
-                        line-height: 46px;
+                        font-size: 64px;
+                        line-height: 64px;
 
                         text-transform: uppercase;
                         @include tablet_mx {
@@ -328,8 +329,8 @@ body{
                         }
                     }
                     span{
-                        font-size: 24px;
-                        line-height: 64px;
+                        font-size: 26px;
+                        line-height: 26px;
                         text-transform: uppercase;
                         @include tablet{
                             font-size: 18px;
@@ -442,8 +443,8 @@ body{
                             outline: none;
                         }
                         h4{
-                            font-size: 42px;
-                            line-height: 72px;
+                            font-size: 52px;
+                            line-height: 52px;
                             text-align: left !important;
                             padding-left: 24px;
                             padding-bottom: 30px;
@@ -474,8 +475,8 @@ body{
                         }
                         p{
                             padding-bottom: 45px;
-                            font-size: 18px;
-                            line-height: 30px;
+                            font-size: 30px;
+                            line-height: 36px;
                             padding: 0px 25px;
 
                             @include medium_mx{
@@ -497,8 +498,8 @@ body{
                     }
                     .slick-arrow{
                        position: absolute;
-                       bottom: 90px;
-                       left: 85px;
+                       bottom: 105px;
+                       left: 105px;
                        background: transparent;
                        color: #fff;
                        outline: none;
@@ -626,21 +627,6 @@ body{
             .slogan_txt{
                 &:nth-child(1){
                     margin-bottom: 60px;
-                //     animation: appear 0.9s ease-in-out ;
-                //    @keyframes appear {
-                //        0%{
-                //            opacity: 0;
-                //            transform: translateY(50px);
-                //        }50%{
-                //            opacity: 0.5;
-                //        }100% {
-                //            opacity: 1;
-                //            transform: translateY(0px);
-                //        }
-                //    }
-                }
-                &:nth-child(2){
-
                 }
                 h2{
                     font-size: 54px;
@@ -675,11 +661,16 @@ body{
 #analytics{
     .container{
         .section_inner{
-            .text_container{
+            .col-one{
                 display: flex;
+                align-items: center;
                 justify-content: center;
+                .text_container{
+                    display: flex;
+                    justify-content: center;
+                }
             }
-           .col-lg-7{
+           .col-two{
                display: flex;
                flex-direction: column;
                justify-content: center;
@@ -687,10 +678,11 @@ body{
             .image_container{
                 background: url(../images/analytics-bg.png) no-repeat;
                 background-size: cover;
-                padding: 120px 60px;
-                
+                padding: 102px 60px;
+                position: relative;
+
                 @include laptop_mx {
-                    padding: 60px;
+                    // padding: 26px;
                 }
                 @include small_mx{
                     padding: 18px;
@@ -698,21 +690,20 @@ body{
                 @include tablet{
                     padding: 24px 40px;
                 }
+                @include medium_mx{
+                    padding: 85px 60px;
+                }
                h4{
                    font-size: 48px;
                    line-height: 48px;
                    padding-left: 58px;
-                   @include medium_mx{
-                    font-size: 28px;
-                    line-height: 28px;
-                    padding-left: 58px;
+                   @include tablet_mx{
+                    font-size: 36px;
+                    line-height: 30px;
                    }
-                   @include tablet{
-                       font-size: 28px;
+                   @include small_mx{
+                       font-size:28px;
                        line-height: 24px;
-                   }
-                   @include mobile_sm{
-                       font-size: 18px;
                    }
                }
                p{
@@ -720,71 +711,90 @@ body{
                   &.first{
                       font-size: 24px;
                       padding-left: 60px;
-                      @include medium_mx{
-                        font-size: 18px;
-                        line-height: 28px;
+                      font-family: "myrid";
+
+                      @include small_mx{
+                        font-size: 16px;
                        }
                        @include tablet{
-                           font-size: 18px;
+                        //    font-size: 18px;
                        }
                        @include mobile_sm{
-                        font-size: 12px;
-                        line-height: 23px;
+                        // font-size: 12px;
+                        // line-height: 23px;
                        }
                   }
                   &.second{
                      padding: 30px 0px;
                      margin-left: 120px;
+                     font-size: 32px;
+                     line-height: 36px;
+                     font-family: "myrid";
+                     @include tablet_mx{
+                        font-size: 18px;
+                        padding: 22px 0px;
+                        margin-left: 120px;
+                        font-size: 18px;
+                        line-height: 24px;
+                      }
                      @include medium_mx{
-                         margin-left: 90px;
+                        //  margin-left: 90px;
                      }
                      @include tablet{
-                         margin-left: 85px;
+                        //  margin-left: 85px;
                      }
                      @include mobile_sm{
-                        margin-left: 92px;
-                        font-size: 10px;
+                        // margin-left: 92px;
+                        // font-size: 10px;
                      }
                   }
                }
             }
-            .button{
-                // background-color: #03a6ff;
-                // text-transform: uppercase;
-                // color: #000;
-                // padding: 15px 60px;
-                // display: inline-block;
-                // margin-top: 15px;
-                // margin-right: 106px;
-                // cursor: pointer;
-                // @extend %btn;
-                @extend %btn;
-                padding-left: 20px;
-                padding-right: 20px;
-                margin-left: 140px;
-                @include laptop_mx{
-                    font-size: 14px;
-                    padding: 6px 30px;
-                    margin-top: 8px;
-                    margin-left: 55px;
-                }
-                @include small_mx{
-                    margin-right: 80px;
-                }
-                @include tablet{
-                    padding: 10px 16px;
-                    margin-right: 222px;
-                }
-                @include tablet_min_max{
-                    margin-right: 172px;
-                }
-                @include mobile_sm{
-                    font-size: 13px;
-                    padding: 6px 12px;
-                    margin-right: -25px;
+            .button_s{
+                position: absolute;
+                bottom: -70px;
+                left: 160px;
+                @include tablet_mx{
+                    left: 50%;
+                    bottom: -54px;
+                    transform: translate(-50%);
                 }
                 @include medium_mx{
-                    margin-left: 95px;
+                    // bottom: -60px;
+                    // left: 145px;
+
+                }
+                .button{
+                    @extend %btn;
+                    margin-top: 10px;
+                    text-transform: uppercase;
+                    // padding-left: 20px;
+                    // padding-right: 20px;
+                    // margin-left: 140px;
+                    @include laptop_mx{
+                        font-size: 14px;
+                        padding: 6px 30px;
+                        margin-top: 8px;
+                        // margin-left: 55px;
+                    }
+                    @include small_mx{
+                        // margin-right: 80px;
+                    }
+                    @include tablet{
+                        padding: 10px 16px;
+                        // margin-right: 222px;
+                    }
+                    @include tablet_min_max{
+                        // margin-right: 172px;
+                    }
+                    @include mobile_sm{
+                        font-size: 13px;
+                        padding: 6px 12px;
+                        // margin-right: -25px;
+                    }
+                    @include medium_mx{
+                        // margin-left: 95px;
+                    }
                 }
             }
            }
@@ -796,59 +806,93 @@ body{
 /* strategy section start */
 #strategy{
     @extend #analytics;
+    .image_container{
+        padding: 85px 60px !important;
+
+        @include small_mx{
+            padding: 18px !important;
+        }
+        @include laptop_mx {
+            // padding: 26px;
+        }
+        @include small_mx{
+            // padding: 18px;
+        }
+        @include tablet{
+            padding: 24px 40px !important;
+        }
+    }
     .text_container{
         margin-bottom: 200px;
         @include tablet_mx{
             margin-bottom: 0px !important;
         }
     }
-    .strategy_btn{
-        margin-left: 102px;
-        @include medium_mx{
-            margin-left: 72px;
+    .button_s{
+        display: flex;
+        bottom: 70px !important;
+        left: 160px !important;
+        @include tablet_mx {
+            bottom: -50px !important;
+            left: 50% !important;
+            transform: translate(-50%);
         }
-        @include small_mx{
-            margin-left: 47px;
+        @include tablet{
+            bottom: -30px !important;
         }
-        @include tablet {
-            margin-left: 94px;
-        }
-        @include tablet_min_max {
-            margin-left: 135px;
-        }
-        @include mobile_sm{
-            margin-left: 0px;
-        }
-        .button{
-            font-size: 14px !important;
-            padding: 15px 10px !important;
-            // margin-right: 46px !important;
-            margin-left: 46px !important;
-            @include medium_mx{
-                font-size: 14px !important;
-                padding: 12px 22px !important;
-                margin-right: 44px !important;
-                margin: 0;
-            }
-            @include small_mx{
-                padding: 12px 18px !important;
-                margin-right: 24px !important;
-                margin: 0;
-                font-size: 8px !important;
-            }
-            @include tablet{
-                font-size: 10px !important;
-                padding: 12px 11px !important;
-                margin-right: 32px !important;
-            }
-            @include mobile_sm{
-                margin-right: 24px !important;
-                margin: 0;
-                font-size: 4px !important;
-                padding: 10px 12px !important;
+        a{
+            &:first-child{
+                margin-right: 30px;
             }
         }
     }
+    // .strategy_btn{
+    //     margin-left: 102px;
+    //     @include medium_mx{
+    //         margin-left: 72px;
+    //     }
+    //     @include small_mx{
+    //         margin-left: 47px;
+    //     }
+    //     @include tablet {
+    //         margin-left: 94px;
+    //     }
+    //     @include tablet_min_max {
+    //         margin-left: 135px;
+    //     }
+    //     @include mobile_sm{
+    //         margin-left: 0px;
+    //     }
+    //     .button{
+    //         font-size: 14px !important;
+    //         padding: 15px 10px !important;
+    //         // margin-right: 46px !important;
+    //         margin-left: 46px !important;
+    //         @include medium_mx{
+    //             font-size: 14px !important;
+    //             padding: 12px 22px !important;
+    //             margin-right: 44px !important;
+    //             margin: 0;
+    //         }
+    //         @include small_mx{
+    //             padding: 12px 18px !important;
+    //             margin-right: 24px !important;
+    //             margin: 0;
+    //             font-size: 8px !important;
+    //         }
+    //         @include tablet{
+    //             font-size: 10px !important;
+    //             padding: 12px 11px !important;
+    //             margin-right: 32px !important;
+    //         }
+    //         @include mobile_sm{
+    //             margin-right: 24px !important;
+    //             margin: 0;
+    //             font-size: 4px !important;
+    //             padding: 10px 12px !important;
+    //         }
+    //     }
+    // }
 }
 /* End  strategy section  */
 
