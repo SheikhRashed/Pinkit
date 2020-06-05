@@ -438,6 +438,12 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  #banner .banner_bg .bnnr_content p img {
+    width: 160px;
+  }
+}
+
 #banner .banner_bg .bnnr_content .background_grdient h1 {
   font-size: 72px;
   line-height: 80px;
@@ -459,9 +465,10 @@ body {
   }
 }
 
-@media (min-width: 320px) and (max-width: 575px) {
+@media (max-width: 576px) {
   #banner .banner_bg .bnnr_content .background_grdient h1 {
-    font-size: 26px;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
@@ -1102,12 +1109,6 @@ body {
 @media (min-width: 992px) and (max-width: 1024px) {
   #analytics .container .section_inner .col-two .image_container, #strategy .container .section_inner .col-two .image_container {
     padding: 24px 40px;
-  }
-}
-
-@media (max-width: 767px) {
-  #analytics .container .section_inner .col-two .image_container, #strategy .container .section_inner .col-two .image_container {
-    padding: 85px 60px;
   }
 }
 
