@@ -201,6 +201,9 @@ body{
         p{
             img{
                 width: 390px;
+                @include medium_mx{
+                    width: 220px;
+                }
             }
         }
         .background_grdient{
@@ -210,11 +213,16 @@ body{
                 text-transform: uppercase;
                 position: relative;
 
+                @include tablet_mx{
+                    font-size: 42px;
+                    line-height: 48px;
+                }
                 @include medium_mx{
                     font-size: 38px;
+                    line-height: 39px;
                 }
                 @include mobile_sm{
-                    font-size: 18px;
+                    font-size: 26px;
                 }
                 &:after{
                     content:'';

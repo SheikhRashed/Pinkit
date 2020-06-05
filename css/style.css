@@ -432,6 +432,12 @@ body {
   width: 390px;
 }
 
+@media (max-width: 767px) {
+  #banner .banner_bg .bnnr_content p img {
+    width: 220px;
+  }
+}
+
 #banner .banner_bg .bnnr_content .background_grdient h1 {
   font-size: 72px;
   line-height: 80px;
@@ -439,15 +445,23 @@ body {
   position: relative;
 }
 
+@media (max-width: 991px) {
+  #banner .banner_bg .bnnr_content .background_grdient h1 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+
 @media (max-width: 767px) {
   #banner .banner_bg .bnnr_content .background_grdient h1 {
     font-size: 38px;
+    line-height: 39px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
   #banner .banner_bg .bnnr_content .background_grdient h1 {
-    font-size: 18px;
+    font-size: 26px;
   }
 }
 
