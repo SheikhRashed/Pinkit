@@ -138,7 +138,7 @@ $dektop: 1024px;
     -webkit-transform: translate3d(0,0,0);
     transform: translate(-50%,0%);
 
-    @include mobile_sm{
+    @include medium_mx(){
         transform: translate(50%,0%);
     }
     

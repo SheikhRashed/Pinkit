@@ -32,7 +32,8 @@ body{
         // padding-top: 150px;
         position: relative;
         @include small_mx{
-            padding: 40px 0px;
+            height: calc(100vh - 80px);
+            padding: 30px 0px;
         }
         &.pb{
             padding-top: 160px;
