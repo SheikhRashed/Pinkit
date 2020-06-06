@@ -141,6 +141,9 @@ $dektop: 1024px;
     @include medium_mx(){
         transform: translate(50%,0%);
     }
+    @media(max-width: 360px){
+        transform: translate(100%,5%);
+    }
     
 }
 

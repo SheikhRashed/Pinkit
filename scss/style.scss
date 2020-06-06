@@ -35,6 +35,9 @@ body{
                 // padding: 30px 0px;
                 height: calc(100vh - 80px) !important;
             }
+           @media(max-width: 576px) and(max-height: 576px){
+
+           }
         &.pb{
             padding-top: 160px;
         }
@@ -50,14 +53,20 @@ body{
 
             @include medium_mx{
                 left: 110px;
+                top: 17px;
             }
             @include tablet_min_max{
                 left: 150px;
             }
             @include small_mx{
-                left: 35px;
-                top: 12px;
+                left: 85px;
+                top: 6px;
                 font-size: 18px;
+            }
+            @media (max-width: 360px){
+                left: 45px;
+                top: -5px;
+                font-size: 16px;
             }
         }
         .brand-log{
@@ -79,9 +88,17 @@ body{
             right: 80px;
             top: 130px;
             z-index: 333;
+            @include medium_mx{
+                right: 45px;
+                top: 100px;
+            }
             @include small_mx{
-                right: 22px;
-                top: 85px;
+                right: 40px;
+                top: 70px;
+            }
+            @media (max-width: 360px) {
+                right: 18px;
+                top: 40px;
             }
             &.change{
                 .span_1{
@@ -133,6 +150,10 @@ body{
                 &.fade{
                     opacity: 1;
                     transform: translateY(0px);
+
+                    @media(max-width: 360px) {
+                        transform: translateY(-95px);
+                    }
                 }
                 li{
                     margin: 0px 15px;
@@ -196,10 +217,15 @@ body{
         @include small_mx{
             // padding: 30px 0px;
         }
+        @media (max-width: 360px){
+            padding: 0px;
+        }
         h1{
             img{
+
+                width: calc(100% - 80%);
                 @include small_mx{
-                    width: 120px;
+                    // width: 120px;
                 }
                 // @media (min-width: 320px) and (max-width: 562px) { 
                 //     width: 120px
@@ -233,7 +259,11 @@ body{
                     line-height: 39px;
                 }
                 @include small_mx{
-                    font-size: 18px;
+                    font-size: 26px;
+                    line-height: 30px;
+                }
+                @media (max-width: 360px) {
+                    font-size: 22px;
                     line-height: 22px;
                 }
                 &:after{
@@ -278,7 +308,19 @@ body{
                 text-transform: uppercase;
                 font-family: "square";
                 @include mobile_sm{
+                    // font-size: 12px;
+                }
+                @include medium_mx{
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+                @include small_mx{
                     font-size: 12px;
+                    line-height: 18px;
+                }
+                @media (max-width: 360px) {
+                    font-size: 12px;
+                    line-height: 10px;
                 }
             }
         }
@@ -292,21 +334,30 @@ body{
             @include medium_mx{
                 display: flex;
                 right: 112px;
-                bottom: 8px;
+                bottom: 15px;
             }
             @include small_mx{
-                right: 38px;
-                bottom: -20px;
+                right: 90px;
+                bottom: 6px;
+            }
+            @media (max-width: 360px){
+                right: 54px;
+                bottom: -8px;
             }
         .start_icon{
             width: 60px;
-            height: 60px;
+            margin: 8px 0px;
             @include medium_mx{
-                width: 50px;
+                width: 42px;
+                margin: 0px 8px;
             }
             @include small_mx{
                 margin: 0px 4px;
-                width: 20px;
+                width: 30px;
+            }
+            @media (max-width: 360px) {
+                width: 18px;
+
             }
           
         }
@@ -508,7 +559,7 @@ body{
                             padding-bottom: 45px;
                             padding: 0px 25px;
                             text-align: justify;
-                            text-transform: capitalize;
+                            text-transform: ca;
                             @include medium_mx{
                                 font-size: 18px;
                                 line-height: 24px;
