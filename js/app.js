@@ -55,7 +55,10 @@ $(document).ready(function() {
     });
     
 // Service slider
-$('.tab_content').slick();
+$('.tab_content').slick({
+  draggable: false,
+  autoplay: false,
+});
 
 
 // client Slider
