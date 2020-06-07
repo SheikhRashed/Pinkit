@@ -32,59 +32,99 @@ body{
 }
 
 // media query
-$mobile: 576px;
-$tablet: 767px;
-$laptop: 991px;
-$dektop: 1024px;
 
-@mixin  mobile_sm {
-    @media (min-width:320px) and (max-width: 575px) {
-            @content;
-    }
-}
+$desktop: 1281px;
+$laptop: 1025px;
+$tablet: 768px;
+$mobile: 481px;
+$s_mobile: 320px;
 
-@mixin large_mx {
-    @media (max-width: #{$dektop}) {
-        @content;
-    }
-}
-@mixin medium_mx {
-    @media (max-width: #{$tablet}) {
-        @content;
-    }
-}
 
-@mixin  small_mx {
-    @media (max-width: $mobile) {
+@mixin desktops {
+    @media (min-width: #{1281px}){
         @content;
     }
 }
-@mixin  tablet_mx {
-    @media (max-width: $laptop) {
+@mixin laptops {
+    @media (min-width: #{$laptop}) and (max-width:1280px){
         @content;
     }
 }
-@mixin  laptop_mx {
-    @media (max-width: $laptop) {
+@mixin tablets_potrait {
+    @media (min-width: #{$tablet}) and (max-width:1024px){
+        @content;
+    }
+}
+@mixin tablets_landscape {
+    @media (min-width: #{$tablet}) and (max-width:1024px) and (orientation: landscape){
         @content;
     }
 }
 
-@mixin tablet_min_max {
-    @media (min-width: 768px) and(max-width: 991px) {
+@mixin mobiles {
+    @media (min-width: #{$mobile}) and (max-width:767px){
         @content;
     }
 }
-@mixin tablet {
-    @media (min-width: 992px) and(max-width: #{$dektop}) {
+@mixin mobiles_s {
+    @media (min-width: #{$s_mobile}) and (max-width:480px){
         @content;
     }
 }
-@mixin laptop_min_max {
-    @media (min-width: 768px) and (max-width: 1024px){
-        @content;
-    }
-}
+
+// $mobile: 576px;
+// $tablet: 767px;
+// $laptop: 991px;
+// $dektop: 1024px;
+
+// @mixin  mobile_sm {
+//     @media (min-width:320px) and (max-width: 575px) {
+//             @content;
+//     }
+// }
+
+// @mixin large_mx {
+//     @media (max-width: #{$dektop}) {
+//         @content;
+//     }
+// }
+// @mixin medium_mx {
+//     @media (max-width: #{$tablet}) {
+//         @content;
+//     }
+// }
+
+// @mixin  small_mx {
+//     @media (max-width: $mobile) {
+//         @content;
+//     }
+// }
+// @mixin  tablet_mx {
+//     @media (max-width: $laptop) {
+//         @content;
+//     }
+// }
+// @mixin  laptop_mx {
+//     @media (max-width: $laptop) {
+//         @content;
+//     }
+// }
+
+// @mixin tablet_min_max {
+//     @media (min-width: 768px) and(max-width: 991px) {
+//         @content;
+//     }
+// }
+// @mixin tablet {
+//     @media (min-width: 992px) and(max-width: #{$dektop}) {
+//         @content;
+//     }
+// }
+// @mixin laptop_min_max {
+//     @media (min-width: 768px) and (max-width: 1024px){
+//         @content;
+//     }
+// }
 // @include mobile{
 //     @media (min-width:991px) and(max-width:#{$laptop}){
 //         @content;
@@ -95,10 +135,12 @@ $dektop: 1024px;
 
 .container{
     max-width: 1360px !important;
-
     @media (max-width: 1240px) {
         width: 90%;
     }
+    // @include desktops(){
+    //     width: 90%;
+    // }
 }
 
 
@@ -137,13 +179,15 @@ $dektop: 1024px;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
     transform: translate(-50%,0%);
-
-    @include medium_mx(){
-        transform: translate(50%,0%);
+    @include mobiles_s(){
+        transform: translate(100%, 0);
     }
-    @media(max-width: 360px){
-        transform: translate(100%,5%);
-    }
+    // @include medium_mx(){
+    //     transform: translate(50%,0%);
+    // }
+    // @media(max-width: 360px){
+    //     transform: translate(100%,5%);
+    // }
     
 }
 
