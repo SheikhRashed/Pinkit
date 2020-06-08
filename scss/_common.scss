@@ -32,29 +32,23 @@ body{
 }
 
 // media query
-
-$desktop: 1281px;
 $laptop: 1025px;
 $tablet: 768px;
 $mobile: 481px;
 $s_mobile: 320px;
 
-
-@mixin desktops {
-    @media (min-width: #{1281px}){
-        @content;
-    }
-}
 @mixin laptops {
     @media (min-width: #{$laptop}) and (max-width:1280px){
         @content;
     }
 }
+
 @mixin tablets_potrait {
     @media (min-width: #{$tablet}) and (max-width:1024px){
         @content;
     }
 }
+
 @mixin tablets_landscape {
     @media (min-width: #{$tablet}) and (max-width:1024px) and (orientation: landscape){
         @content;
@@ -66,72 +60,34 @@ $s_mobile: 320px;
         @content;
     }
 }
+
 @mixin mobiles_s {
     @media (min-width: #{$s_mobile}) and (max-width:480px){
         @content;
     }
 }
 
-// $mobile: 576px;
-// $tablet: 767px;
-// $laptop: 991px;
-// $dektop: 1024px;
-
-// @mixin  mobile_sm {
-//     @media (min-width:320px) and (max-width: 575px) {
-//             @content;
-//     }
-// }
-
-// @mixin large_mx {
-//     @media (max-width: #{$dektop}) {
-//         @content;
-//     }
-// }
-// @mixin medium_mx {
-//     @media (max-width: #{$tablet}) {
-//         @content;
-//     }
-// }
-
-// @mixin  small_mx {
-//     @media (max-width: $mobile) {
-//         @content;
-//     }
-// }
-// @mixin  tablet_mx {
-//     @media (max-width: $laptop) {
-//         @content;
-//     }
-// }
-// @mixin  laptop_mx {
-//     @media (max-width: $laptop) {
-//         @content;
-//     }
-// }
-
-// @mixin tablet_min_max {
-//     @media (min-width: 768px) and(max-width: 991px) {
-//         @content;
-//     }
-// }
-// @mixin tablet {
-//     @media (min-width: 992px) and(max-width: #{$dektop}) {
-//         @content;
-//     }
-// }
-// @mixin laptop_min_max {
-//     @media (min-width: 768px) and (max-width: 1024px){
-//         @content;
-//     }
-// }
-// @include mobile{
-//     @media (min-width:991px) and(max-width:#{$laptop}){
-//         @content;
-//     }
-// }
-
-
+@mixin mobiles_s_landscape {
+    @media (min-width: #{$s_mobile}) and (max-width:480px) and (orientation: landscape){
+        @content;
+    }
+}
+// For mobiles device
+@mixin nexus{
+    @media (min-width: 412px) and(height: 732px) {
+            @content;
+    }
+}
+@mixin blackBerryZ30{
+    @media (min-width: 360px) and (height: 640px) {
+            @content;
+    }
+}
+@mixin blackBerryPlay{
+    @media (min-width: 360px) and (height: 640px) {
+            @content;
+    }
+}
 
 .container{
     max-width: 1360px !important;
@@ -164,7 +120,7 @@ $s_mobile: 320px;
   }
   .cursor:nth-child(2) {
     background-color: rgba(255,255,255,.3);
-    z-index: 9;
+    z-index: 1;
   }
 
 
@@ -178,7 +134,13 @@ $s_mobile: 320px;
     right: 12px;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
-    transform: translate(-50%,0%);
+    transform: translate(50%,0%);
+    @include tablets_potrait{
+        // transform: translate(50%, 0);
+    }
+    @include mobiles(){
+        // transform: translate(50%, 0);
+    }
     @include mobiles_s(){
         transform: translate(100%, 0);
     }

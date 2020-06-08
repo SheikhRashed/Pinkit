@@ -59,6 +59,12 @@ $('.tab_content').slick({
   draggable: false,
   autoplay: false,
 });
+$('.tab_slide_btn').slick({
+  draggable: true,
+  autoplay: false,
+  arrows: false,
+  
+});
 
 
 // client Slider
