@@ -86,6 +86,10 @@ body{
                left: 25px;
                top: 8px;
            }
+           @include pixel_2{
+               top: 12px;
+               left: 40px;
+           }
         }
         .brand-log{
             position: absolute;
@@ -138,6 +142,9 @@ body{
             @include blackBerryZ30{
                 right: 20px;
                 top: 55px;
+            }
+            @include pixel_2{
+                top: 70px;
             }
             &.change{
                 .span_1{
@@ -284,7 +291,9 @@ body{
                 @include mobiles_s{
                     width: (100% - 50%);
                 }
-
+                @include pixel_2{
+                    width: calc(100% - 75%);
+                }
             }
         }
         p{
@@ -322,6 +331,10 @@ body{
                 @include mobiles_s{
                     font-size: 18px;
                     line-height: 24px;
+                }
+                @include pixel_2 {
+                    font-size: 22px;
+                    line-height: 26px;
                 }
                 &:after{
                     content:'';
@@ -396,6 +409,10 @@ body{
         @include blackBerryZ30{
             bottom: 5px;
             right: 55px;
+        }
+        @include pixel_2{
+            right: 70px;
+            bottom: 8px;
         }
         .start_icon{
             width: 60px;
@@ -562,6 +579,10 @@ body{
                         top: 5px;
                         right: 12px;
                     }
+                    @include pixel_2{
+                        top: 6px;
+                        right: 20px;
+                    }
                 }
 
                 .tab_content {
@@ -700,6 +721,10 @@ body{
                        }
                        @include blackBerryZ30{
                            bottom: 38px;
+                       }
+                       @include pixel_2{
+                           left: 35px;
+                           bottom: 35px;
                        }
                        &.slick-next{
                            margin-left: 215px;
@@ -886,6 +911,9 @@ body{
                 @include blackBerryZ30{
                     padding: 35px 0px;
                 }
+                @include pixel_2{
+                    padding: 41px 0px;
+                }
                h4{
                    font-size: 48px ;
                    line-height: 48px ;
@@ -911,6 +939,10 @@ body{
                    @include nexus{
                        font-size: 22px;
                    }
+                   @include pixel_2 {
+                       font-size: 22px;
+                       line-height: 26px;
+                   }
                }
                p{
                     
@@ -935,6 +967,10 @@ body{
                     }
                     @include nexus {
                         font-size: 12px
+                    }
+                    @include pixel_2 {
+                        font-size: 12px;
+                        line-height: 16px;
                     }
                   }
                   &.second{
@@ -973,6 +1009,12 @@ body{
                          margin-left: 45px;
                          padding: 14px 20px;
                      }
+
+                     @include pixel_2 {
+                        font-size: 12px;
+                        line-height: 16px;
+                        margin-left: 65px;
+                    }
                   }
                }
             }
@@ -1036,6 +1078,9 @@ body{
         }
         @include blackBerryZ30{
             padding: 41px 4px !important;
+        }
+        @include pixel_2{
+            padding: 39px 4px !important;
         }
         p{
             &.second{
@@ -1163,6 +1208,10 @@ body{
                             top: 45px;
                         }
 
+                        @include pixel_2{
+                            top: 50px;
+                        }
+
                     }
                 }
             }
@@ -1224,7 +1273,9 @@ body{
             @include nexus {
                 text-align: left ;
             }
-
+            @include pixel_2 {
+                text-align: left;
+            }
         }
         .case_slider{
             z-index: 3333;
@@ -1404,6 +1455,9 @@ body{
                         top: 60%;;
                     }
                     @include nexus{
+                        transform: translate(0%,-50%);
+                    }
+                    @include pixel_2{
                         transform: translate(0%,-50%);
                     }
 

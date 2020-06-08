@@ -72,6 +72,7 @@ $s_mobile: 320px;
         @content;
     }
 }
+
 // For mobiles device
 @mixin nexus{
     @media (min-width: 412px) and(height: 732px) {
@@ -88,15 +89,17 @@ $s_mobile: 320px;
             @content;
     }
 }
+@mixin pixel_2{
+    @media (min-width: 411px) and (height: 731px) {
+            @content;
+    }
+}
 
 .container{
     max-width: 1360px !important;
     @media (max-width: 1240px) {
         width: 90%;
     }
-    // @include desktops(){
-    //     width: 90%;
-    // }
 }
 
 
@@ -144,13 +147,6 @@ $s_mobile: 320px;
     @include mobiles_s(){
         transform: translate(100%, 0);
     }
-    // @include medium_mx(){
-    //     transform: translate(50%,0%);
-    // }
-    // @media(max-width: 360px){
-    //     transform: translate(100%,5%);
-    // }
-    
 }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
@@ -189,57 +185,6 @@ $s_mobile: 320px;
     margin: 7px 0px;
     position: relative;
 }
-
-
-// Buttons
-// %btn {
-//     display: inline-block;
-//     position: relative;
-//     padding: 0.5em 2.2em;
-//     font-size: 25px;
-//     background: transparent;
-//     cursor: pointer;
-//     user-select: none;
-//     outline: none;
-//     color: royalblue;
-//     overflow: hidden;
-//     span{
-//         position: absolute;
-//         left: 0;
-//         top: 0;
-//         width: 100%;
-//         height: 100%;
-//         background: transparent;
-//         z-index: -1;
-//         border: 5px solid royalblue;
-
-//         &::before{
-//             content: '';
-//             position: absolute;
-//             width: 8%;
-//             height: 500%;
-//             outline: none;
-//             background: #fff;
-//             top: 50%;
-//             left: 50%;
-//             transform: translate(-50%,-50%) rotate(-60deg);
-//             transition: all 0.3s;;
-//         }
-//     }
-//     &:hover{
-//         span{
-//             &::before{
-//                 transform: translate(-50%,-50%) rotate(-90deg);
-//                 width: 100%;
-//                 background-color: royalblue;
-//             }
-//         }
-//         color: #fff;
-//     }
-//     &:focus {
-//         @extend .button:hover;
-//     }
-// }
 
 %btn {
     position: relative;
