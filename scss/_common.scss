@@ -93,7 +93,7 @@ $s_mobile: 320px;
     }
 }
 @mixin blackBerryPlay{
-    @media (min-width: 360px) and (height: 640px) {
+    @media (min-width: 600px) and (height: 1024px) {
             @content;
     }
 }
@@ -104,6 +104,23 @@ $s_mobile: 320px;
 }
 @mixin pixel_xl{
     @media (min-width: 411px) and (height: 823px) {
+            @content;
+    }
+}
+
+// Iphoness
+@mixin iphone_5{
+    @media (min-width: 320px) and (height: 568px) {
+            @content;
+    }
+}
+@mixin iphone_6{
+    @media (min-width: 375px) and (height: 667px) {
+            @content;
+    }
+}
+@mixin iphone_plus{
+    @media (min-width: 414px) and (height: 736px) {
             @content;
     }
 }
