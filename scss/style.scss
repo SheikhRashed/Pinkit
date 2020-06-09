@@ -121,6 +121,14 @@ body{
                top: 12px;
                left: 50px;
            }
+           @include iphone_x{
+               top: 15px;
+               left: 35px;
+           }
+           @include ipad{
+               top: 5px;
+               left: 110px;
+           }
         }
         .brand-log{
             position: absolute;
@@ -139,7 +147,7 @@ body{
             @include tablets_potrait{
                 left: 10px;
             }
-            @media(max-width: 767px) {
+            @media(max-width: 768px) {
                 display: none;
             }
         }
@@ -187,6 +195,9 @@ body{
             @include iphone_5{
                 top: 40px;
             }
+            @include iphone_x{
+                top: 80px;
+            }
             &.change{
                 .span_1{
                     transform: rotate(-45deg) translate(-9px, 6px);
@@ -212,7 +223,6 @@ body{
             
         }
           .nav_links{
-                overflow: hidden;
                 background: #396b9c;
                 display: flex;
                 justify-content: space-evenly;
@@ -258,11 +268,14 @@ body{
                     @include iphone_5{
                         transform: translateY(-75px);
                     }
+                    @include iphone_x{
+                        transform: translateY(-45px);
+                    }
                 }
                 li{
                     margin: 0px 15px;
                     position: relative;
-                    transition: 0.4s;
+                    // transition: 0.4s;
                     @media (max-width: 1024px){
                         margin: 8px 0px;
                         padding: 0;
@@ -301,7 +314,7 @@ body{
                     }
 
                     &:hover{
-                        transform: scale(1.1);
+                        
                         @media (max-width: 1024px){
                             background: #03a6ff;
                         }
@@ -325,6 +338,41 @@ body{
                         @include iphone_5{
                             font-size: 12px;
                         }
+                        &.nav-hover{
+                            position: relative;
+
+                        }
+                    }
+                    .dropdown_content{
+                        display: none;
+                        position: absolute;
+                        top: 42px;
+                        left: 0px;
+                        background-color: #396b9c;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                        min-width: 230px;
+                        padding: 12px 0px;
+                        @media(max-width: 1024px) {
+                        width: inherit;
+                        }
+                        .dropdown_item{
+                            display: block;
+                            text-align: center;
+                            margin: 8px 0px;
+                            font-size: 16px;
+                            padding: 2px 0px;
+                            &:hover{
+                                background-color: rgba(0, 225, 255, 0.562);
+                            }
+                           
+                        }
+                    }
+
+                    &:focus-within{
+                           .dropdown_content{
+                               display: block;
+                           }
                     }
                 }
             }
@@ -505,6 +553,13 @@ body{
             right: 65px;
             bottom: 5px;
         }
+        @include iphone_x{
+            right: 60px;
+            bottom: 10px;
+        }
+        @include ipad{
+            right: 140px;
+        }
         .start_icon{
             width: 60px;
             @include desktops{
@@ -533,6 +588,9 @@ body{
             }
             @include iphone_5{
                 width: 20px;
+            }
+            @include ipad{
+                width: 30px;
             }
         }
     }
@@ -699,6 +757,9 @@ body{
                         top: 5px;
                         right: 20px;
                     }
+                    @include iphone_x{
+                        right: 10px;
+                    }
                 }
 
                 .tab_content {
@@ -857,6 +918,10 @@ body{
                            left: 40px;
                            bottom: 38px;
                        }
+                       @include iphone_x{
+                           left: 25px;
+                           bottom: 38px;
+                       }
                        &.slick-next{
                            margin-left: 215px;
                            @include laptops{
@@ -875,6 +940,9 @@ body{
                                margin-left: 65px;
                            }
                            @include iphone_plus{
+                               margin-left: 60px;
+                           }
+                           @include iphone_x{
                                margin-left: 60px;
                            }
                        }
@@ -1026,7 +1094,10 @@ body{
             .image_container{
                 background: url(../images/analytics-bg.png) no-repeat;
                 background-size: cover;
-                padding: 113px 60px ;
+                padding: 117px 60px ;
+                @include desktops{
+                    padding: 112px 60px;
+                }
                 @include laptops{
                     padding: 42px 35px;
                 }
@@ -1060,6 +1131,15 @@ body{
                 @include iphone_plus{
                     padding: 42px 0px;
                 }
+                @include iphone_x{
+                    padding: 15px 0px;
+                }
+                @include ipad{
+                    padding: 26px 20px;
+                }
+                // @include ipad_landscape{
+                //     padding: 67px 20px;
+                // }
                h4{
                    font-size: 48px ;
                    line-height: 48px ;
@@ -1105,6 +1185,10 @@ body{
                        font-size: 22px;
                        line-height: 26px;
                    }
+                   @include iphone_x{
+                       font-size: 22px;
+                       line-height: 26px;
+                   }
                }
                p{
                     
@@ -1147,6 +1231,10 @@ body{
                         line-height: 16px;
                     }
                     @include iphone_plus{
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                    @include iphone_x{
                         font-size: 12px;
                         line-height: 16px;
                     }
@@ -1213,6 +1301,15 @@ body{
                         font-size: 12px;
                         line-height: 16px;
                         margin-left: 56px;
+                    }
+                    @include iphone_x{
+                        padding: 14px 25px;
+                        font-size: 12px;
+                        line-height: 16px;
+                        margin-left: 56px;
+                    }
+                    @include ipad{
+                        margin-left: 70px;
                     }
                   }
                }
@@ -1296,6 +1393,9 @@ body{
         }
         @include iphone_plus{
             padding: 40px 4px !important;
+        }
+        @include iphone_plus{
+            padding: 21px 4px !important;
         }
         p{
             &.second{
@@ -1503,6 +1603,7 @@ body{
             @include mobiles_s{
                 font-size: 36px;
                 margin-bottom: 10px;
+                text-align: left;
             }
             @include nexus {
                 text-align: left ;
@@ -1716,6 +1817,9 @@ body{
                     }
                     @include iphone_plus{
                         transform: translate(0%,-50%);
+                    }
+                    @include iphone_x{
+                        transform: translate(5%,-50%);
                     }
                 .title{
                     font-size: 24px;

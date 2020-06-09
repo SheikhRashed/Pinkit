@@ -124,6 +124,21 @@ $s_mobile: 320px;
             @content;
     }
 }
+@mixin iphone_x{
+    @media (min-width: 375px) and (height: 812px) {
+            @content;
+    }
+}
+@mixin ipad{
+    @media (min-width: 768px) and (height: 1024px) {
+            @content;
+    }
+}
+@mixin ipad_landscape{
+    @media (min-width: 768px) and (max-height: 1024px) and (orientation: landscape){
+            @content;
+    }
+}
 
 .container{
     max-width: 1360px !important;
