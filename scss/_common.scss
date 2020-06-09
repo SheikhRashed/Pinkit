@@ -32,10 +32,18 @@ body{
 }
 
 // media query
+$desktop: 1281px;
 $laptop: 1025px;
 $tablet: 768px;
 $mobile: 481px;
 $s_mobile: 320px;
+
+
+@mixin desktops {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
 
 @mixin laptops {
     @media (min-width: #{$laptop}) and (max-width:1280px){
@@ -91,6 +99,11 @@ $s_mobile: 320px;
 }
 @mixin pixel_2{
     @media (min-width: 411px) and (height: 731px) {
+            @content;
+    }
+}
+@mixin pixel_xl{
+    @media (min-width: 411px) and (height: 823px) {
             @content;
     }
 }

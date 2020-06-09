@@ -91,12 +91,12 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="tabs_container">                        
-                            <h4 class="title">Our <br> services</h4>
+                            <h4 class="title d-none d-sm-block">Our services</h4>
+                            <h4 class="title d-block d-sm-none">Our <br>services</h4>
                             <!-- Tabs Content -->
                             <div class="tab_content">
-            
                                 <!-- Tab -->
-                                <div class="tab-item">
+                                <div class="tab-item" id="pay">
                                     <h4>PAY PER CLICK ADS</h4>
                                     <p>Best way to connect your target audience, and get potential leads. As a digital marketing company we do the setup for you; perform research, ad campaign, set bidding strategy, run the campaign and manage campaigns to achieve your focused ROI marketing goal.</p>								
                                     <a href="#" class="button">read more...
@@ -106,7 +106,7 @@
                                 <!-- end of tab -->
             
                                 <!-- Tab -->
-                                <div class="tab-item">
+                                <div class="tab-item" id="social">
                                     <h4>SOCIAL MEIDA M.</h4>
                                     <p>222 Best way to connect your target audience, and get potential leads. As a digital marketing company we do the setup for you; perform research, ad campaign, set bidding strategy, run the campaign and manage campaigns to achieve your focused ROI marketing goal.</p>
                                     
@@ -117,7 +117,7 @@
                                 <!-- end of tab -->
             
                                 <!-- Tab -->
-                                <div class="tab-item ">
+                                <div class="tab-item  " id="content">
                                     <h4>CONTENT MARKETING</h4>
                                     <p>333  Best way to connect your target audience,and get potential leads. As a digital marketing company we do the setup for you; perform research,ad campaign,set bidding strategy, run the campaign and manage campaigns to achieve your focused ROI marketing goal.</p>
                                     <a href="#" class="button">read more...
@@ -127,7 +127,7 @@
                                 </div> <!-- end of  -->
                                 <!-- end of tab -->
                                     <!-- Tab -->
-                                <div class="tab-item ">
+                                <div class="tab-item  " id="orm">
                                     <h4>ORM</h4>
                                     <p>444  Best way to connect your target audience, and get potential leads. As a digital marketing company we do the setup for you; perform research, ad campaign, set bidding strategy, run the campaign and manage campaigns to achieve your focused ROI marketing goal.</p>
                                     <a href="#" class="button">read more...
@@ -137,7 +137,7 @@
                                 </div> <!-- end of  -->
                                 <!-- end of tab -->
                                     <!-- Tab -->
-                                <div class=" tab-item">
+                                <div class=" tab-item " id="brand">
                                     <h4>BRAND BUILDING</h4>
                                     <p>555  Best way to connect your target audience, and get potential leads. As a digital marketing company we do the setup for you; perform research, ad campaign, set bidding strategy, run the campaign and manage campaigns to achieve your focused ROI marketing goal.</p>
                                     
@@ -147,7 +147,7 @@
                                 </div> <!-- end of  -->
                                 <!-- end of tab -->
                                     <!-- Tab -->
-                                <div class=" tab-item">
+                                <div class=" tab-item" id="prink">
                                     <h4>PRINKIT.IN SURVEYS</h4>
                                     <p>666 Best way to connect your target audience, and get potential leads. As a digital marketing company we do the setup for you; perform research,ad campaign, set bidding strategy, run the campaign and manage campaigns to achieve your focused ROI marketing goal.</p>
                                     
@@ -161,44 +161,44 @@
                             <!-- end of tabs content -->
                             <!-- Tabs Links -->
                             <ul class="nav nav_tabs d-none d-lg-block">
-                                <li class="nav-item">
-                                    <a class="nav-link">PAY PER CLICK ADS</a>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#pay">PAY PER CLICK ADS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" >SOCIAL MEIDA M.</a>
+                                    <a class="nav-link" href="#social">SOCIAL MEIDA M.</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" >CONTENT MARKETING</a>
+                                    <a class="nav-link" href="#content">CONTENT MARKETING</a>
                                 </li> 
                                 <li class="nav-item">
-                                    <a class="nav-link" >ORM</a>
+                                    <a class="nav-link" href="#orm">ORM</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link">BRAND BUILDING</a>
+                                    <a class="nav-link" href="#brand">BRAND BUILDING</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link">PRINKIT.IN SURVEYS</a>
+                                    <a class="nav-link" href="#prink">PRINKIT.IN SURVEYS</a>
                                 </li>
                             </ul>
                             <!-- For small devices -->
                             <ul class="nav nav_tabs tab_slide_btn d-block d-lg-none">
                                 <li class="nav-item">
-                                    <a class="nav-link">PAY PER CLICK ADS</a>
+                                    <a class="nav-link" href="#pay">PAY PER CLICK ADS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" >SOCIAL MEIDA M.</a>
+                                    <a class="nav-link" href="#social">SOCIAL MEIDA M.</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" >CONTENT MARKETING</a>
+                                    <a class="nav-link" href="#content">CONTENT MARKETING</a>
                                 </li> 
                                 <li class="nav-item">
-                                    <a class="nav-link" >ORM</a>
+                                    <a class="nav-link" href="#orm">ORM</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link">BRAND BUILDING</a>
+                                    <a class="nav-link" href="#brand">BRAND BUILDING</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link">PRINKIT.IN SURVEYS</a>
+                                    <a class="nav-link" href="#prink">PRINKIT.IN SURVEYS</a>
                                 </li>
                             </ul>
                             <!-- end of tabs links -->
@@ -463,6 +463,9 @@
 </div>
     <!-- Script tage goes here -->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script>
+
+    </script>
     <script src="js/wow.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/aos.js"></script>

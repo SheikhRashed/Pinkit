@@ -28,6 +28,9 @@ body{
         height: calc(100vh - 100px);
         padding: 60px 0px;
         position: relative;
+        @include laptops {
+            // height: calc(100vh -)
+        }
         @include tablets_landscape{
         height: calc(100vh - 230px);
         }
@@ -49,13 +52,18 @@ body{
         .brand-txt{
             position: absolute;
             left: 300px;
-            top: 25px;
             font-size: 36px;
-            line-height: 2.6rem;
+            line-height: 42px;
             color: #fff;
             text-transform: uppercase;
+            @include desktops{
+                top: 20px;
+                line-height: 42px;
+            }
             @include laptops{
                 left: 190px;
+                top: 5px;
+                line-height: 50px;
             }
             @include tablets_landscape{
                 left: 115px;
@@ -95,8 +103,12 @@ body{
             position: absolute;
             top: 5px;
             left: 50px;
+            @include desktops{
+                left: 40px;
+                top: 12px;
+            }
             @include laptops {
-                left: 25px;
+                left: 10px;
             }
             @include tablets_landscape{
                 display: none;
@@ -118,7 +130,7 @@ body{
             z-index: 333;
             @include laptops{
                 right: 45px;
-                top: 110px;
+                top: 90px;
             }
             @include tablets_potrait{
                 right: 42px;
@@ -278,18 +290,26 @@ body{
         }
         h1{
             img{
-                width: (100% - 75%);
+                width: calc(100% - 85%);
+                @include desktops{
+                }
+                @include laptops {
+                    width: calc(100% - 85%);
+                }
                 @include tablets_landscape{
-                width: (100% - 80%);
+                width: calc(100% - 80%);
                 }
                 @include nexus{
-                    width: (100%- 70%) !important;
+                    width: calc(100% - 70%) !important;
                 }
                 @include blackBerryZ30{
-                    width: (100% - 75%) !important; 
+                    width: calc(100% - 75%) !important; 
+                }
+                @include mobiles{
+                    width: calc(100% - 90%);
                 }
                 @include mobiles_s{
-                    width: (100% - 50%);
+                    width: calc(100% - 50%);
                 }
                 @include pixel_2{
                     width: calc(100% - 75%);
@@ -312,10 +332,12 @@ body{
         }
         .background_grdient{
             h1 {
-                font-size: 72px;
-                line-height: 80px;
                 text-transform: uppercase;
                 position: relative;
+                @include desktops{
+                    font-size: 64px;
+                    line-height: 68px;
+                }
                 @include laptops{
                     font-size: 46px;
                     line-height: 50px;
@@ -416,6 +438,12 @@ body{
         }
         .start_icon{
             width: 60px;
+            @include desktops{
+                width: 50px;
+            }
+            @include laptops{
+                width: 45px;
+            }
             @include tablets_potrait{
                 width: 45px;
                 margin: 0px 6px;
@@ -552,15 +580,19 @@ body{
                     line-height: 42px;
                     text-transform: uppercase;
                     z-index: 3333;
+                    @include desktops {
+                        right: 100px;
+                        top: 35px;
+                    }
                     @include laptops{
-                        top: 10px;
-                        right: 70px;
+                        top: 36px;
+                        right: 22px;
                         line-height: 34px;
                     }
                     @include tablets_potrait{
-                        font-size: 28px;
-                        top: 20px;
-                        right: 30px;
+                        font-size: 22px;
+                        top: 45px;
+                        right: 12px;
                         line-height: 32px;
                     }
                     @include mobiles{
@@ -582,6 +614,10 @@ body{
                     @include pixel_2{
                         top: 6px;
                         right: 20px;
+                    }
+                    @include pixel_xl{
+                        top: 5px;
+                        right: 15px;
                     }
                 }
 
@@ -725,6 +761,10 @@ body{
                        @include pixel_2{
                            left: 35px;
                            bottom: 35px;
+                       }
+                       @include pixel_xl{
+                           left: 35px;
+                           bottom: 38px;
                        }
                        &.slick-next{
                            margin-left: 215px;
@@ -914,6 +954,9 @@ body{
                 @include pixel_2{
                     padding: 41px 0px;
                 }
+                @include pixel_xl{
+                    padding: 41px 0px;
+                }
                h4{
                    font-size: 48px ;
                    line-height: 48px ;
@@ -943,6 +986,10 @@ body{
                        font-size: 22px;
                        line-height: 26px;
                    }
+                   @include pixel_xl {
+                       font-size: 22px;
+                       line-height: 26px;
+                   }
                }
                p{
                     
@@ -969,6 +1016,10 @@ body{
                         font-size: 12px
                     }
                     @include pixel_2 {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                    @include pixel_xl{
                         font-size: 12px;
                         line-height: 16px;
                     }
@@ -1011,6 +1062,11 @@ body{
                      }
 
                      @include pixel_2 {
+                        font-size: 12px;
+                        line-height: 16px;
+                        margin-left: 65px;
+                    }
+                     @include pixel_xl {
                         font-size: 12px;
                         line-height: 16px;
                         margin-left: 65px;
@@ -1080,6 +1136,9 @@ body{
             padding: 41px 4px !important;
         }
         @include pixel_2{
+            padding: 39px 4px !important;
+        }
+        @include pixel_xl{
             padding: 39px 4px !important;
         }
         p{
@@ -1211,6 +1270,9 @@ body{
                         @include pixel_2{
                             top: 50px;
                         }
+                        @include pixel_xl{
+                            top: 45px;
+                        }
 
                     }
                 }
@@ -1274,6 +1336,9 @@ body{
                 text-align: left ;
             }
             @include pixel_2 {
+                text-align: left;
+            }
+            @include pixel_xl {
                 text-align: left;
             }
         }
@@ -1458,6 +1523,9 @@ body{
                         transform: translate(0%,-50%);
                     }
                     @include pixel_2{
+                        transform: translate(0%,-50%);
+                    }
+                    @include pixel_xl{
                         transform: translate(0%,-50%);
                     }
 

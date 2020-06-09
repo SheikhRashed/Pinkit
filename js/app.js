@@ -1,5 +1,12 @@
+// $(document).ready(function(){
+//   $(".nav-tabs .nav-item a").click(function(){
+//       $(this).tab('show');
+//   });
+// });
 $(function(){
-  
+    $(".nav-tabs .nav-item a").click(function(){
+      $(this).tab('show');
+  });
   new WOW().init();
 
 
@@ -72,7 +79,7 @@ $('.client_slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 900,
   arrows: false,
   dots: false,
   infinite: true,
