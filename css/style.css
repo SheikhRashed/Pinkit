@@ -292,8 +292,8 @@ body {
   #banner .banner_bg .brand .brand-txt {
     font-size: 22px;
     line-height: 26px;
-    top: 18px;
-    left: 20px;
+    top: 8px;
+    left: 15px;
   }
 }
 
@@ -393,7 +393,7 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
   #banner .banner_bg nav .toggler_icon {
     right: 20px;
-    top: 90px;
+    top: 60px;
   }
 }
 
@@ -441,8 +441,8 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   #banner .banner_bg nav .toggler_icon .span {
-    width: 35px;
-    height: 4px;
+    width: 30px;
+    height: 2px;
   }
 }
 
@@ -508,8 +508,8 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   #banner .banner_bg nav .nav_links.fade {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    -webkit-transform: translateY(-72px);
+            transform: translateY(-72px);
   }
 }
 
@@ -586,6 +586,12 @@ body {
   color: #fff;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  #banner .banner_bg nav .nav_links li a {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 1024px) {
   #banner .banner_bg nav .nav_links li a {
     color: #fff;
@@ -599,6 +605,12 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   #banner .banner_bg .bnnr_content {
     padding: 40px 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #banner .banner_bg .bnnr_content {
+    padding: 30px 0px;
   }
 }
 
@@ -644,7 +656,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   #banner .banner_bg .bnnr_content h1 img {
-    width: calc(100% - 50%);
+    width: calc(100% - 70%);
   }
 }
 
@@ -810,7 +822,7 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
   #banner .start {
     right: 45px;
-    bottom: 12px;
+    bottom: 0px;
   }
 }
 
@@ -2019,6 +2031,7 @@ body {
   #clients .container .section_inner .col-md-4 .title {
     margin: auto;
     font-size: 36px;
+    margin-bottom: 30px;
   }
 }
 
@@ -2072,7 +2085,7 @@ body {
   #clients .container .section_inner .col-md-4 .title::after {
     height: 2px;
     width: 280px;
-    top: 78px;
+    top: 45px;
     right: -25px;
   }
 }
@@ -2444,8 +2457,8 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   #map .container.map .world .marker {
-    -webkit-transform: translate(8%, -50%);
-            transform: translate(8%, -50%);
+    -webkit-transform: translate(12%, -50%);
+            transform: translate(12%, -50%);
     width: 325px;
     height: 200px;
     left: 50%;

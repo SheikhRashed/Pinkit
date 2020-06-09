@@ -81,8 +81,8 @@ body{
             @include mobiles_s{
                 font-size: 22px;
                 line-height: 26px;
-                top: 18px;
-                left: 20px;
+                top: 8px;
+                left: 15px;
 
             }
             // For devices
@@ -146,7 +146,7 @@ body{
             }
             @include mobiles_s{
                 right: 20px;
-                top: 90px;
+                top: 60px;
             }
             @include nexus{
                 top: 70px;
@@ -176,8 +176,8 @@ body{
                 margin: 6px 0px;
                 transition: all 0.3s linear;
                 @include mobiles_s{
-                    width: 35px;
-                    height: 4px;
+                    width: 30px;
+                    height: 2px;
                 }
             }
             
@@ -217,7 +217,7 @@ body{
                         transform: translateY(45px);
                     }
                     @include mobiles_s{
-                        transform: translateY(-40px);
+                        transform: translateY(-72px);
 
                     }
                     @include nexus {
@@ -272,6 +272,9 @@ body{
                         text-transform: uppercase;
                         font-size: 16px;
                         color: #fff;
+                        @include mobiles_s{
+                            font-size: 14px;
+                        }
                         @media (max-width: 1024px){
                             color: #fff;
                         }
@@ -284,6 +287,9 @@ body{
         padding: 60px 0px;
         @include tablets_landscape{
             padding: 40px 0px;
+        }
+        @include mobiles_s{
+            padding: 30px 0px;
         }
         @include blackBerryZ30{
             padding: 20px 0px;
@@ -309,7 +315,7 @@ body{
                     width: calc(100% - 90%);
                 }
                 @include mobiles_s{
-                    width: calc(100% - 50%);
+                    width: calc(100% - 70%);
                 }
                 @include pixel_2{
                     width: calc(100% - 75%);
@@ -422,7 +428,7 @@ body{
         }
         @include mobiles_s{
             right: 45px;
-            bottom: 12px;
+            bottom: 0px;
         }
         @include nexus{
             right: 65px;
@@ -1225,6 +1231,7 @@ body{
                     @include mobiles_s{
                         margin: auto;
                         font-size: 36px;
+                        margin-bottom: 30px;
                     }
                     @include nexus {
                         margin-bottom: 60px;
@@ -1257,7 +1264,7 @@ body{
                         @include mobiles_s{
                             height: 2px;
                             width: 280px;
-                            top: 78px;
+                            top: 45px;
                             right: -25px;
                         }
                         @include nexus {
@@ -1513,12 +1520,13 @@ body{
                         right: 90px;
                     }
                     @include mobiles_s{
-                        transform: translate(8%, -50%);
+                        transform: translate(12%, -50%);
                         width: 325px;
                         height: 200px;
                         left: 50%;
                         top: 60%;;
                     }
+                    // For brand mobiless
                     @include nexus{
                         transform: translate(0%,-50%);
                     }
