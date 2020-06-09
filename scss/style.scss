@@ -819,7 +819,7 @@ body{
                             }
                         }
                         p{
-                            font-size: 24px;
+                            font-size: 22px;
                             line-height: 28px;
                             padding-bottom: 45px;
                             padding: 0px 25px;
@@ -1628,13 +1628,15 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: flex-start;
                 @include mobiles_s{
                     margin-top: 20px;
                 }
                 h3{
-                    text-align: right;
-                    font-size: 32px;
-                    line-height: 48px;
+                    // text-align: right;
+                    text-align: left;
+                    font-size: 36px;
+                    line-height: 42px;
                     text-transform: uppercase;
                     color: #60c7ff;
                     @include laptops {
@@ -1659,7 +1661,8 @@ body{
                     }
                 }
                 p{
-                    text-align: right;
+                    // text-align: right;
+                    text-align: left;
                     font-size: 18px;
                     @include laptops {
                         text-align: left;
@@ -1676,7 +1679,7 @@ body{
                 }
                 .button{
                         @extend %btn;
-                        margin-left: auto;
+                        margin-left: 0;
                         margin-top: 18px;
                         @media (max-width: 1280px) {
                             margin-left: 0px;
