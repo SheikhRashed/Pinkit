@@ -1,28 +1,3 @@
-@font-face {
-  font-family: "nasali";
-  src: url("../fonts/nasalization-rg.ttf");
-}
-
-@font-face {
-  font-family: "game_show";
-  src: url("../fonts/Gameshow.ttf");
-}
-
-@font-face {
-  font-family: "game_show_2";
-  src: url("../fonts/Gameshow.otf");
-}
-
-@font-face {
-  font-family: "myrid";
-  src: url("../fonts/Myriad Pro Regular.ttf");
-}
-
-@font-face {
-  font-family: "square";
-  src: url("../fonts/Square.ttf");
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -193,6 +168,31 @@ body {
           transform: translate(-50%, -50%) rotate(-90deg);
   width: 100%;
   background-color: #03a6ff;
+}
+
+@font-face {
+  font-family: "nasali";
+  src: url("../fonts/nasalization-rg.ttf");
+}
+
+@font-face {
+  font-family: "game_show";
+  src: url("../fonts/Gameshow.ttf");
+}
+
+@font-face {
+  font-family: "game_show_2";
+  src: url("../fonts/Gameshow.otf");
+}
+
+@font-face {
+  font-family: "myrid";
+  src: url("../fonts/Myriad Pro Regular.ttf");
+}
+
+@font-face {
+  font-family: "square";
+  src: url("../fonts/Square.ttf");
 }
 
 body {
@@ -2114,13 +2114,13 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   #analytics .container .section_inner .col-two .text_container, #strategy .container .section_inner .col-two .text_container {
-    padding: 15px;
+    padding: 30px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   #analytics .container .section_inner .col-two .text_container, #strategy .container .section_inner .col-two .text_container {
-    padding: 15px;
+    padding: 30px;
   }
 }
 
@@ -2352,15 +2352,15 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   #analytics .container .section_inner .col-two .button_s, #strategy .container .section_inner .col-two .button_s {
-    -webkit-transform: translate(-50%, 25px);
-            transform: translate(-50%, 25px);
+    -webkit-transform: translate(-50%, 45px);
+            transform: translate(-50%, 45px);
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   #analytics .container .section_inner .col-two .button_s, #strategy .container .section_inner .col-two .button_s {
-    -webkit-transform: translate(-50%, 30px);
-            transform: translate(-50%, 30px);
+    -webkit-transform: translate(-50%, 25px);
+            transform: translate(-50%, 25px);
   }
 }
 
