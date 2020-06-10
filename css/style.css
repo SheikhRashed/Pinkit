@@ -2792,9 +2792,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -2804,7 +2804,7 @@ body {
 }
 
 #studies .container .case_slider .slide_box .text_container h3 {
-  text-align: left;
+  text-align: right;
   font-size: 36px;
   line-height: 42px;
   text-transform: uppercase;
@@ -2851,7 +2851,7 @@ body {
 }
 
 #studies .container .case_slider .slide_box .text_container p {
-  text-align: left;
+  text-align: right;
   font-size: 24px;
   line-height: 28px;
 }
@@ -3145,8 +3145,9 @@ body {
 
 #map .container.map .world .marker .title {
   font-size: 24px;
+  line-height: 28px;
   padding-bottom: 28px;
-  line-height: 40px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -3162,6 +3163,7 @@ body {
   max-width: 50%;
   float: left;
   text-align: center;
+  text-transform: uppercase;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
