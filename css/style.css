@@ -197,6 +197,7 @@ body {
 
 body {
   position: relative;
+  font-family: "nasali";
 }
 
 .section {
@@ -3017,11 +3018,6 @@ body {
 
 /* End  studies section  */
 /* map section start */
-#map {
-  /* End  map section  */
-  /* supply section start */
-}
-
 #map .container.map {
   padding: 75px 0px;
 }
@@ -3191,61 +3187,8 @@ body {
   }
 }
 
-#map #supply .container .section_inner .suplly_box {
-  background: url(../images/detail-bg.png) no-repeat;
-  background-size: 95% 100%;
-  text-align: center;
-  padding-top: 75px;
-  padding-bottom: 15px;
-  z-index: 1;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  #map #supply .container .section_inner .suplly_box {
-    padding-bottom: 16px;
-    margin-bottom: 12px;
-    padding-top: 34px;
-  }
-}
-
-#map #supply .container .section_inner .suplly_box .apply {
-  font-size: 22px;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  #map #supply .container .section_inner .suplly_box .apply {
-    font-size: 14px;
-  }
-}
-
-#map #supply .container .section_inner .suplly_box .jobs {
-  font-size: 46px;
-  line-height: 46px;
-  padding-bottom: 36px;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  #map #supply .container .section_inner .suplly_box .jobs {
-    font-size: 26px;
-    line-height: 28px;
-    padding-bottom: 3px;
-  }
-}
-
-#map #supply .container .section_inner .suplly_box a {
-  font-size: 18px;
-  font-family: "myrid";
-  color: #fff;
-  cursor: pointer;
-  z-index: 99999999999999999999999999999;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  #map #supply .container .section_inner .suplly_box a {
-    font-size: 12px;
-  }
-}
-
+/* End  map section  */
+/* supply section start */
 /* start  supply section  */
 #supply .container .section_inner .col-lg-4 {
   z-index: 99999999999999999999;
@@ -3258,6 +3201,8 @@ body {
   padding-top: 75px;
   padding-bottom: 15px;
   z-index: 999999999999999999999;
+  font-family: "nasali";
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -3316,7 +3261,6 @@ body {
 
 #supply .container .section_inner .col-lg-4 .suplly_box a {
   font-size: 18px;
-  font-family: "myrid";
   color: #fff;
 }
 
