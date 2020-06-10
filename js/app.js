@@ -79,7 +79,7 @@ $('.client_slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 900,
+  autoplaySpeed: 2000,
   arrows: false,
   dots: false,
   infinite: true,
@@ -89,7 +89,7 @@ $('.client_slider').slick({
       breakpoint: 1200,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1
       }
     },
     {

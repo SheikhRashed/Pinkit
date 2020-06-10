@@ -1326,6 +1326,14 @@ body {
   }
 }
 
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+  #about .container .about_inner .abt_vid_col .abt_Video {
+    width: 200px;
+    height: 220px;
+    margin: auto;
+  }
+}
+
 #about .container .about_inner .abt_vid_col .abt_Video iframe {
   width: 100%;
   height: 100%;
@@ -1924,6 +1932,13 @@ body {
   }
 }
 
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+  #slogan .container .section_inner .slogan_txt h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 #slogan .container .section_inner .slogan_txt p {
   font-size: 38px;
   line-height: 42px;
@@ -1935,7 +1950,7 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
   #slogan .container .section_inner .slogan_txt p {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 26px;
   }
 }
 
@@ -1951,6 +1966,20 @@ body {
     line-height: 22px;
     padding-top: 0px;
     text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+  #slogan .container .section_inner .slogan_txt p {
+    margin-top: 10px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  #slogan .container .section_inner .slogan_txt p {
+    font-size: 22px;
+    line-height: 26px;
   }
 }
 
@@ -2583,6 +2612,12 @@ body {
   }
 }
 
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  #clients .container .section_inner .col-md-4 .title::after {
+    top: -130px;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   #clients .container .section_inner .col-md-4 .title::after {
     height: 2px;
@@ -2706,6 +2741,13 @@ body {
   }
 }
 
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+  #studies .container .title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
 @media (min-width: 412px) and (height: 732px) {
   #studies .container .title {
     text-align: left;
@@ -2800,6 +2842,13 @@ body {
   }
 }
 
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+  #studies .container .case_slider .slide_box .text_container h3 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
 #studies .container .case_slider .slide_box .text_container p {
   text-align: left;
   font-size: 24px;
@@ -2827,6 +2876,13 @@ body {
   }
 }
 
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+  #studies .container .case_slider .slide_box .text_container p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
 #studies .container .case_slider .slide_box .text_container .button {
   margin-left: 0;
   margin-top: 18px;
@@ -2846,6 +2902,12 @@ body {
   }
 }
 
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+  #studies .container .case_slider .slide_box .text_container .button {
+    font-size: 10px;
+  }
+}
+
 @media (max-width: 1280px) {
   #studies .container .case_slider .slide_box .img_container {
     display: -webkit-box;
@@ -2860,6 +2922,18 @@ body {
 #studies .container .case_slider .slide_box .img_container .bg_img {
   position: relative;
   z-index: 1;
+}
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+  #studies .container .case_slider .slide_box .img_container .bg_img {
+    width: 130px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  #studies .container .case_slider .slide_box .img_container .bg_img {
+    width: 250px;
+  }
 }
 
 #studies .container .case_slider .slide_box .img_container .bg {
@@ -2966,6 +3040,12 @@ body {
   }
 }
 
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  #map .container.map .world {
+    height: 350px;
+  }
+}
+
 #map .container.map .world .world_sm {
   position: absolute;
   left: 50%;
@@ -3008,6 +3088,20 @@ body {
     height: 200px;
     left: 50%;
     top: 60%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+  #map .container.map .world .marker {
+    -webkit-transform: translate(-15%, -150%);
+            transform: translate(-15%, -150%);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  #map .container.map .world .marker {
+    -webkit-transform: translate(-50%, -80px);
+            transform: translate(-50%, -80px);
   }
 }
 
