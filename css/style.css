@@ -222,13 +222,15 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   #banner .container .banner_bg {
-    height: calc(100vh - 280px);
+    height: calc(100vh - 100px);
+    padding: 0px;
+    padding-top: 30px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   #banner .container .banner_bg {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 50px);
     padding: 30px 0px;
   }
 }
@@ -823,7 +825,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   #banner .container .banner_bg .bnnr_content {
-    padding: 30px 0px;
+    padding: 40px 0px;
   }
 }
 
