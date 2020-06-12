@@ -1263,6 +1263,7 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
   #about .container .about_inner .abt_txt_col .abt_txt_content {
     text-align: center !important;
+    margin-bottom: 15px;
   }
 }
 
@@ -3060,9 +3061,23 @@ body {
           transform: translate(-35%, 0px);
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 767px) {
   #map .container.map .world {
     background: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #map .container.map .world {
+    -webkit-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #map .container.map .world {
+    -webkit-transform: translate(-52%, 0px);
+            transform: translate(-52%, 0px);
   }
 }
 
@@ -3076,13 +3091,14 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -160%);
-          transform: translate(-50%, -160%);
+  -webkit-transform: translate(-60%, -160%);
+          transform: translate(-60%, -160%);
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
   #map .container.map .world .world_sm {
-    display: none;
+    -webkit-transform: translate(-70%, -160%);
+            transform: translate(-70%, -160%);
   }
 }
 
@@ -3108,10 +3124,17 @@ body {
   }
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  #map .container.map .world .marker {
+    -webkit-transform: translate(-62%);
+            transform: translate(-62%);
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   #map .container.map .world .marker {
-    -webkit-transform: translate(10%, -50%);
-            transform: translate(10%, -50%);
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
     width: 325px;
     height: 200px;
     left: 50%;
