@@ -222,9 +222,8 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   #banner .container .banner_bg {
-    height: calc(100vh - 250px);
-    padding: 0px;
-    padding-top: 30px;
+    height: calc(100vh - 220px);
+    padding: 60px 0px;
   }
 }
 
@@ -256,6 +255,18 @@ body {
 @media (min-width: 600px) and (height: 1024px) {
   #banner .container .banner_bg {
     height: calc(100vh - 530px);
+  }
+}
+
+@media (min-width: 411px) and (height: 823px) {
+  #banner .container .banner_bg {
+    height: calc(100vh - 310px);
+  }
+}
+
+@media (min-width: 411px) and (max-width: 823px) and (orientation: landscape) {
+  #banner .container .banner_bg {
+    height: calc(100vh - 20px);
   }
 }
 
@@ -841,6 +852,12 @@ body {
   }
 }
 
+@media (min-width: 411px) and (max-width: 823px) and (orientation: landscape) {
+  #banner .container .banner_bg .bnnr_content {
+    padding: 0px;
+  }
+}
+
 #banner .container .banner_bg .bnnr_content h1 img {
   width: calc(100% - 85%);
 }
@@ -1093,6 +1110,13 @@ body {
   #banner .container .start {
     right: 70px;
     bottom: 8px;
+  }
+}
+
+@media (min-width: 411px) and (height: 823px) {
+  #banner .container .start {
+    right: 65px;
+    bottom: 10px;
   }
 }
 
