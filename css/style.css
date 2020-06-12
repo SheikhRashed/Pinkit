@@ -222,7 +222,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   #banner .container .banner_bg {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 250px);
     padding: 0px;
     padding-top: 30px;
   }
