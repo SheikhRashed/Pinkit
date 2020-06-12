@@ -1057,7 +1057,7 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
   #banner .container .start {
     right: 45px;
-    bottom: 0px;
+    bottom: 5px;
   }
 }
 
