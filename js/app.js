@@ -3,6 +3,35 @@
 //       $(this).tab('show');
 //   });
 // });
+
+$(window).on('load', function() {
+	/* -----------------------------------
+			  2. Sound Setup
+	----------------------------------- */
+	$('body').append('<audio loop autoplay volume="0" id="audio-player"><source src="music.mp3" type="audio/mpeg"></audio>');
+    	var audio = document.getElementById("audio-player");
+    	audio.volume = 0.2;
+	
+	if($(window).length) {
+		$('.music-bg').css({'visibility':'visible'});
+		$('body').addClass("audio-on");
+		if ($('body').hasClass('audio-off')) {
+        	$('body').removeClass('audio-on');
+		} 
+		$(".music-bg").on('click', function() {
+			$('body').toggleClass("audio-on audio-off");         
+			if ($('body').hasClass('audio-off')) {
+				audio.pause();
+			} 
+			if ($('body').hasClass('audio-on')) {
+				audio.play();
+			}
+		});
+	}
+});
+
+
+
 $(function(){
     $(".nav-tabs .nav-item a").click(function(){
       $(this).tab('show');
@@ -68,9 +97,11 @@ $('.tab_content').slick({
 });
 $('.tab_slide_btn').slick({
   draggable: true,
-  autoplay: false,
+  autoplay: true,
+  autoplaySpeed: 1500,
   arrows: false,
-  
+  slidesToShow: 2,
+  slideToScroll: 1,
 });
 
 
@@ -126,6 +157,5 @@ toggler.addEventListener('click',(x)=>{
   nav_links.classList.toggle("fade");
   nav_links.classList.toggle("pb");
   toggler.classList.toggle("change");
-  console.log(`${open} is working.......`);
   
 });
