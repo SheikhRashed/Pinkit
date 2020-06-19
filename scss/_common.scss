@@ -248,76 +248,78 @@ $s_mobile: 320px;
     position: relative;
 }
 
-%btn {
-    display: inline-block;
-    line-height: 1;
-    padding: 12px 24px;
-    font-size: 18px;
-    font-weight: 600;
-    fill: #fff;
-    color: #fff;
-    background-color: #0060e2;
-    border-radius: 5px;
-    transition: all .3s;
-    outline: none !important;
-    &:hover{
-        transform: translateY(-10px);
-    }
-}
 // %btn {
-//     position: relative;
 //     display: inline-block;
-//     padding: 0.5em 2.2em;
-//     font-size: 16px;
-//     white-space: nowrap;
-//     background: transparent;
-//     cursor: pointer;
-//     user-select: none;
-//     outline: none;
+//     line-height: 1;
+//     padding: 12px 24px;
+//     font-size: 18px;
+//     font-weight: 600;
+//     fill: #fff;
 //     color: #fff;
-//     border: 1px solid #fff;
-//     overflow: hidden;
-//     z-index: 9999999;
-//     transition: 0.5s all;
-
-//     span{
-//         position: absolute;
-//         left: 0;
-//         top: 0;
-//         width: 100% !important;
-//         height: 100%;
-//         background: transparent;
-//         z-index: -1;
-//         overflow: hidden;
-//         &::before{
-//             content: '';
-//             position: absolute;
-//             width: 2%;
-//             height: 500%;
-//             outline: none;
-//             background: #03a6ff;
-//             top: 50%;
-//             left: 50%;
-//             transform: translate(-50%,-50%) rotate(-60deg);
-//             transition: all 0.3s;;
-//         }
-//     }
+//     background-color: #0060e2;
+//     border-radius: 5px;
+//     transition: all .3s;
+//     outline: none !important;
 //     &:hover{
-//         transform: translateY(-5px);
-//     span{
-//         &::before{
-//             transform: translate(-50%,-50%) rotate(-90deg);
-//             width: 100%;
-//             background-color: #03a6ff;
-//         }
+//         transform: translateY(-10px);
 //     }
-//     color: #fff;
-//     }
-//     &:focus {
-//     @extend .button:hover;
-//     }
-    
 // }
+
+%btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.5em 2.2em;
+    font-size: 16px;
+    white-space: nowrap;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 9999999;
+    transition: 0.5s all;
+
+    span{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100% !important;
+        height: 100%;
+        background: transparent;
+        z-index: -1;
+        overflow: hidden;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 2%;
+            height: 500%;
+            outline: none;
+            background: #03a6ff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(-60deg);
+            transition: all 0.3s;;
+        }
+    }
+    &:hover{
+        transform: translateY(-5px);
+    span{
+        &::before{
+            transform: translate(-50%,-50%) rotate(-90deg);
+            width: 100%;
+            background-color: #03a6ff;
+        }
+    }
+    color: #fff;
+    }
+    &:focus {
+    @extend .button:hover;
+    }
+    
+}
 
 .music-bg {
 	display: block;
