@@ -1039,6 +1039,55 @@ body {
 
 #banner .container .banner_bg .bnnr_content h1 img {
   width: calc(100% - 85%);
+  animation: motion linear 1.5s infinite alternate-reverse;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@-webkit-keyframes motion {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  25% {
+    -webkit-transform: translate(5px, 8px);
+            transform: translate(5px, 8px);
+  }
+  50% {
+    -webkit-transform: translate(8px, 12px);
+            transform: translate(8px, 12px);
+  }
+  75% {
+    -webkit-transform: translate(12px, 16);
+            transform: translate(12px, 16);
+  }
+  100% {
+    -webkit-transform: translate(15px, 20px);
+            transform: translate(15px, 20px);
+  }
+}
+
+@keyframes motion {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  25% {
+    -webkit-transform: translate(5px, 8px);
+            transform: translate(5px, 8px);
+  }
+  50% {
+    -webkit-transform: translate(8px, 12px);
+            transform: translate(8px, 12px);
+  }
+  75% {
+    -webkit-transform: translate(12px, 16);
+            transform: translate(12px, 16);
+  }
+  100% {
+    -webkit-transform: translate(15px, 20px);
+            transform: translate(15px, 20px);
+  }
 }
 
 @media (max-height: 620px) {
