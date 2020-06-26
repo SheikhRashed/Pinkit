@@ -4,6 +4,20 @@
 //   });
 // });
 
+window.addEventListener('load',()=>{
+  const preload = document.querySelector(".loader-wrapper");
+  preload.classList.add('preload-finish');
+});
+
+
+
+
+
+
+
+
+
+
 $(window).on('load', function() {
 	/* -----------------------------------
 			  2. Sound Setup

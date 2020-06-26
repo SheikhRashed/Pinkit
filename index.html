@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinkit</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/android-chrome-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/android-chrome-512x512.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images//fav/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="images/fav/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="images/fav/android-icon-36x36.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="images/fav/android-icon-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="images/fav/android-icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/fav/android-icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="images/fav/android-icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="images/fav/apple-icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/fav/apple-icon.png">
     <!-- fontawesome -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,12 +24,17 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <!-- Cursor pointer -->
         <div class="cursor"></div>
         <div class="cursor"></div>
     <!-- / / Cursor pointer -->
+    <div class="loader-wrapper">
+        <span class="loader"><img src="images/logos/logo-2.png" alt=""></span>
+        <div class="welcome ">Welcome To Prinkit.in</div>
+    </div>
 <div id="full_page" class="">
 
     <section class="section " id="banner">
@@ -110,7 +121,8 @@
                 <div class="col-lg-6 col-md-12 abt_vid_col">
                     <div class="abt_Video img-fluid">
                         <!-- <iframe src="https://res.cloudinary.com/dizsspn5l/video/upload/v1589895897/Prinkit.in_video_nqpou1.mp4" frameborder="0" allow="accelerometer; autoplay=false; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay="false"></iframe> -->
-                        <iframe allowfullscreen="" title="youtube Video Player" data-src="https://www.youtube.com/embed/YM25knyuj94?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"src=""></iframe>
+                        <!-- <iframe allowfullscreen="" title="youtube Video Player" data-src="https://www.youtube.com/embed/YM25knyuj94?feature=oembed&amp;start&amp;end&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=0"src=""></iframe> -->
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4ZFR4Ivwi3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -269,7 +281,7 @@
 					</div> <!-- end of text-container -->
 				</div> <!-- end of col -->
 				<div class="col-md-7  col-two">
-					<div class=" text_container">
+					<div class="text_container">
 							<h4>PRINKIT.IN ANALYTICA</h4>
 							<p class="first">Nation’s first advanced analytical facility.</p>
 							<p class="second">Doing marketing without <br> surveys is like shooting <br>someone  with eyes <br>& ears closed.</p>
@@ -324,7 +336,7 @@
                             <img src="images/clients/1.jpg" alt="nazarBaug">
                         </div>
                         <div class="client_box col-md-12">
-                            <img src="images/clients/2.png" alt="Royal Horse">
+                            <img src="images/clients/2.jpg" alt="Royal Horse">
                         </div>
                         <div class="client_box col-md-12">
                             <img src="images/clients/3.jpg" alt="Dogs">
@@ -333,13 +345,7 @@
                             <img src="images/clients/4.jpg" alt="Housefull poperty">
                         </div>
                         <div class="client_box col-md-12">
-                            <img src="images/clients/5.png" alt="Housefull poperty">
-                        </div>
-                        <div class="client_box col-md-12">
-                            <img src="images/clients/6.png" alt="Housefull poperty">
-                        </div>
-                        <div class="client_box col-md-12">
-                            <img src="images/clients/7.png" alt="Housefull poperty">
+                            <img src="images/clients/5.jpg" alt="Housefull poperty">
                         </div>
                     </div>
                 </div>
@@ -465,5 +471,11 @@
     <script src="js/fullpage.extensions.min.js"></script>
     <script src="js/app.js"></script>
     <audio loop="" autoplay="" volume="0" id="audio-player"><source src="audio.mp3" type="audio/mpeg"></audio>
+        <script>
+            
+// $(window).on("load",function(){
+//   $(".loader-wrapper").fadeOut("slow");
+// });
+        </script>
 </body>
 </html>

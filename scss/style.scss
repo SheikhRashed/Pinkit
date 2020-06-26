@@ -629,6 +629,10 @@ body{
             }
             .tab_item{
                 margin: 0px 8px;
+                transition: all 0.5s;
+                &:hover{
+                    transform: translateY(-5px);
+                }
                 a{
                     color: #fff !important;
                     font-size: 28px;
@@ -1332,15 +1336,6 @@ body{
                flex-direction: column;
                justify-content: center;
                align-items: center;
-                @include tablets_landscape{
-                    align-items: center;
-                }
-               @include mobiles_landscape {
-                   align-items: center;
-               }
-               @include mobiles_s_landscape {
-                   align-items: center;
-               }
             .text_container{
                 background: url('../images/analytic/analytics-bg.png') no-repeat;
                 background-size: contain;
