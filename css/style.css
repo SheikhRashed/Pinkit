@@ -110,8 +110,8 @@ body {
 .loader {
   display: inline-block;
   position: relative;
-  -webkit-animation: loader 2s infinite alternate;
-          animation: loader 2s infinite alternate;
+  -webkit-animation: loader 2s infinite;
+          animation: loader 2s infinite;
 }
 
 @-webkit-keyframes loader {
