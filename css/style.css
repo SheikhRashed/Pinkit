@@ -82,8 +82,8 @@ body {
 
 @-webkit-keyframes wel {
   0% {
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
   }
   100% {
     -webkit-transform: translateX(0px);
@@ -93,8 +93,8 @@ body {
 
 @keyframes wel {
   0% {
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
   }
   100% {
     -webkit-transform: translateX(0px);
@@ -110,54 +110,6 @@ body {
 .loader {
   display: inline-block;
   position: relative;
-  -webkit-animation: loader 2s infinite;
-          animation: loader 2s infinite;
-}
-
-@-webkit-keyframes loader {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  25% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  75% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes loader {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  25% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  75% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 /*****************************/
@@ -250,7 +202,6 @@ body {
   outline: none;
   color: #fff;
   border: 1px solid #fff;
-  border-radius: 10px;
   overflow: hidden;
   z-index: 9999999;
   -webkit-transition: 0.5s all;
@@ -499,6 +450,12 @@ body {
   z-index: 999999999;
 }
 
+@media (max-width: 768px) {
+  #banner .container .banner_bg {
+    height: 100vh;
+  }
+}
+
 @media (max-height: 620px) {
   #banner .container .banner_bg {
     padding: 42px 0px;
@@ -507,7 +464,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   #banner .container .banner_bg {
-    height: calc(100vh - 230px);
+    height: calc(100vh - 50px);
   }
 }
 
@@ -2511,54 +2468,13 @@ body {
 #analytics .container .section_inner .col-two .text_container, #strategy .container .section_inner .col-two .text_container {
   background: url("../images/analytic/analytics-bg.png") no-repeat;
   background-size: contain;
-  padding: 68px;
+  padding: 55px;
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-  #analytics .container .section_inner .col-two .text_container, #strategy .container .section_inner .col-two .text_container {
-    padding: 35px;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape) {
-  #analytics .container .section_inner .col-two .text_container, #strategy .container .section_inner .col-two .text_container {
-    padding: 80px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 992px) {
   #analytics .container .section_inner .col-two .text_container, #strategy .container .section_inner .col-two .text_container {
     padding: 30px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  #analytics .container .section_inner .col-two .text_container, #strategy .container .section_inner .col-two .text_container {
-    padding: 40px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  #analytics .container .section_inner .col-two .text_container, #strategy .container .section_inner .col-two .text_container {
-    padding: 42px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
-  #analytics .container .section_inner .col-two .text_container, #strategy .container .section_inner .col-two .text_container {
-    padding: 30px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  #analytics .container .section_inner .col-two .text_container, #strategy .container .section_inner .col-two .text_container {
-    padding: 18px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
-  #analytics .container .section_inner .col-two .text_container, #strategy .container .section_inner .col-two .text_container {
-    padding: 30px;
+    background-size: 100% 100%;
   }
 }
 
@@ -2839,27 +2755,9 @@ body {
 
 /* End  analytics section  */
 /* strategy section start */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
   #strategy .text_container {
-    padding: 25px !important;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
-  #strategy .text_container {
-    padding: 35px !important;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  #strategy .text_container {
-    padding: 30px !important;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape) {
-  #strategy .text_container {
-    padding: 60px !important;
+    margin-bottom: 20px;
   }
 }
 
@@ -2886,8 +2784,8 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   #strategy .button_s {
-    -webkit-transform: translate(-50%, 0px) !important;
-            transform: translate(-50%, 0px) !important;
+    -webkit-transform: translate(-50%, 20px) !important;
+            transform: translate(-50%, 20px) !important;
   }
 }
 
@@ -3483,6 +3381,13 @@ body {
   }
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  #map .container.map .world {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
 #map .container.map .world .world_sm {
   position: absolute;
   left: 50%;
@@ -3495,6 +3400,13 @@ body {
   #map .container.map .world .world_sm {
     -webkit-transform: translate(-70%, -160%);
             transform: translate(-70%, -160%);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #map .container.map .world .world_sm {
+    -webkit-transform: translate(-60%, 0%);
+            transform: translate(-60%, 0%);
   }
 }
 
@@ -3529,8 +3441,8 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
   #map .container.map .world .marker {
-    -webkit-transform: translate(-55%, -50%);
-            transform: translate(-55%, -50%);
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
     width: 325px;
     height: 200px;
     left: 50%;
@@ -3556,13 +3468,6 @@ body {
   #map .container.map .world .marker {
     -webkit-transform: translate(-55%, -50%);
             transform: translate(-55%, -50%);
-  }
-}
-
-@media (min-width: 411px) and (height: 731px) {
-  #map .container.map .world .marker {
-    -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
   }
 }
 

@@ -32,15 +32,19 @@ body{
             background: url('../images/banner/banner.png')  no-repeat;
             background-size: 100% 97%;
             height: calc(100vh - 100px);
+            // height: 100vh;
             padding: 60px 0px;
             position: relative;
             z-index: 999999999;
             // for Lower desktop height display
+            @media(max-width: 768px){
+                height: 100vh;
+            }
             @media(max-height: 620px) {
                 padding: 42px 0px;
             }
             @include tablets_landscape{
-            height: calc(100vh - 230px);
+            height: calc(100vh - 50px);
             }
             @include mobiles_s{
                 height: calc(100vh - 220px);
@@ -1339,32 +1343,36 @@ body{
             .text_container{
                 background: url('../images/analytic/analytics-bg.png') no-repeat;
                 background-size: contain;
-                padding: 68px;
-                @include laptops{
-                    padding: 35px;
+                padding: 55px;
+                @media(max-width: 992px) {
+                    padding: 30px;
+                    background-size: 100% 100%;
                 }
-                @include laptops_landscape{
-                    padding: 80px;
-                }
-               @include tablets_potrait{
-                   padding: 30px;
-               }
-               @include tablets_landscape{
-                   padding: 40px;
-               }
-               @include mobiles{
-                   padding: 42px;
-               }
-               @include mobiles_landscape {
-                   padding: 30px;
-               }
-               @include mobiles_s{
-                   padding: 18px;
-               }
-               @include mobiles_s_landscape{
+            //     @include laptops{
+            //         padding: 35px;
+            //     }
+            //     @include laptops_landscape{
+            //         padding: 80px;
+            //     }
+            //    @include tablets_potrait{
+            //        padding: 30px;
+            //    }
+            //    @include tablets_landscape{
+            //        padding: 40px;
+            //    }
+            //    @include mobiles{
+            //        padding: 42px;
+            //    }
+            //    @include mobiles_landscape {
+            //        padding: 30px;
+            //    }
+            //    @include mobiles_s{
+            //        padding: 18px;
+            //    }
+            //    @include mobiles_s_landscape{
                    
-                   padding: 30px;
-               }
+            //        padding: 30px;
+            //    }
                h4{
                    font-size: 49.14px ;
                    line-height: 45.82px ;
@@ -1550,21 +1558,22 @@ body{
     .text_container{
     //    padding: 51px !important;
         
-        @include mobiles_s{
-            padding: 25px !important;
-        }
+        // @include mobiles_s{
+        //     padding: 25px !important;
+        // }
         @include mobiles_s_landscape{
             // padding: 42px !important;
+            margin-bottom: 20px;
         }
-        @include mobiles_landscape {
-            padding: 35px !important
-        }
-        @include laptops{
-            padding: 30px !important
-        }
-        @include laptops_landscape{
-            padding: 60px !important
-        }
+        // @include mobiles_landscape {
+        //     padding: 35px !important
+        // }
+        // @include laptops{
+        //     padding: 30px !important
+        // }
+        // @include laptops_landscape{
+        //     padding: 60px !important
+        // }
         h4{
            @include mobiles_s {
             // font-size: 18px !important;
@@ -1613,7 +1622,7 @@ body{
         left: 180px;
         transform: translate(0%, -40px) !important;
         @include mobiles_s{
-            transform: translate(-50%, 0px) !important;
+            transform: translate(-50%, 20px) !important;
         }
         @include mobiles_s_landscape{
             transform: translate(-50%, -30px) !important;
@@ -2002,6 +2011,10 @@ body{
                 @include mobiles_landscape{
                     height: 350px;
                 }
+                @include mobiles_s{
+                    transform: translate(-50%, -50%);
+
+                }
                 .world_sm{
                     position: absolute;
                     left: 50%;
@@ -2012,6 +2025,9 @@ body{
                     }
                     @include mobiles{
                         transform: translate(-70%,-160%);
+                    }
+                    @include mobiles_s{
+                        transform: translate(-60%,0%);
                     }
                 }
                 .marker{
@@ -2034,7 +2050,7 @@ body{
                         transform: translate(-62%);
                     }
                     @include mobiles_s{
-                        transform: translate(-55%, -50%);
+                        transform: translate(-50%, 50%);
                         width: 325px;
                         height: 200px;
                         left: 50%;
@@ -2052,9 +2068,9 @@ body{
                     @include nexus{
                         transform: translate(-55%,-50%);
                     }
-                    @include pixel_2{
-                        transform: translate(0%,-50%);
-                    }
+                    // @include pixel_2{
+                    //     transform: translate(0%,-50%);
+                    // }
                     @include pixel_xl{
                         transform: translate(0%,-50%);
                     }
