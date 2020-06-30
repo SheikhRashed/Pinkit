@@ -37,6 +37,9 @@ body{
             position: relative;
             z-index: 999999999;
             // for Lower desktop height display
+            @media(height: 652px) {
+                height: 100vh;
+            }
             @media(max-width: 768px){
                 height: 100vh;
             }
@@ -874,6 +877,7 @@ body{
            
             .tabs_container{
                 background: url('../images/service/tabs.png') center center no-repeat;
+                // background-size: 100% 97%;
                 background-size: 100% 97%;
                 position: relative;
                 @media(max-width: 1024px ) {
@@ -960,6 +964,9 @@ body{
                 .tab_content {
                     z-index: 333;
                     padding: 112px 60px;
+                @media(height: 652px){
+                    padding: 40px 60px;
+                }
                     @include laptops {
                         padding: 50px 60px;
                     }
@@ -1169,6 +1176,7 @@ body{
                 .nav_tabs{
                     position: absolute;
                     top: 93%;
+                    left: 5%;
                     padding-left: 65px;
                     width: 80%;
                     outline: none;
@@ -1245,6 +1253,9 @@ body{
 #slogan{
     .container{
         .section_inner{
+            @media(height: 652px) {
+                padding: 15px 0px;
+            }
             .slogan_txt{
                 &:nth-child(1){
                     margin-bottom: 60px;

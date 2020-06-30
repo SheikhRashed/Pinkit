@@ -112,6 +112,11 @@ body {
   position: relative;
 }
 
+.fp-slide,
+.fp-tableCell {
+  height: auto !important;
+}
+
 /*****************************/
 /*       Cursor CSS          */
 /*****************************/
@@ -448,6 +453,12 @@ body {
   padding: 60px 0px;
   position: relative;
   z-index: 999999999;
+}
+
+@media (height: 652px) {
+  #banner .container .banner_bg {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1890,6 +1901,12 @@ body {
   padding: 112px 60px;
 }
 
+@media (height: 652px) {
+  #service .tabs .container .tabs_container .tab_content {
+    padding: 40px 60px;
+  }
+}
+
 @media (min-width: 1025px) and (max-width: 1280px) {
   #service .tabs .container .tabs_container .tab_content {
     padding: 50px 60px;
@@ -2214,6 +2231,7 @@ body {
 #service .tabs .container .tabs_container .nav_tabs {
   position: absolute;
   top: 93%;
+  left: 5%;
   padding-left: 65px;
   width: 80%;
   outline: none;
@@ -2314,6 +2332,12 @@ body {
 
 /* End  service section  */
 /* slogan section start */
+@media (height: 652px) {
+  #slogan .container .section_inner {
+    padding: 15px 0px;
+  }
+}
+
 #slogan .container .section_inner .slogan_txt:nth-child(1) {
   margin-bottom: 60px;
 }
